@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="gu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1E4A94">
+<meta property="og:title" content="GSRTC હેલ્પર ભરતી — મફત MCQ પ્રેક્ટિસ">
+<meta property="og:description" content="7 વિષય, દરેક પ્રશ્ન સમજૂતી સાથે. મોક ટેસ્ટ, ભૂલ સુધારો અને આકૃતિવાળા ED પ્રશ્નો. ITI Lab ગુજરાતી.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ashish119055.github.io/gsrtc-helper/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E4A94'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23F2A900' stroke-width='6'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23fff'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>ITI Lab હેલ્પર તૈયારી</title>
+<meta name="description" content="GSRTC હેલ્પર ભરતી માટે મફત MCQ પ્રેક્ટિસ — દરેક પ્રશ્ન સમજૂતી સાથે. ITI Lab ગુજરાતી.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@500;650;800&family=Hind+Vadodara:wght@400;500;600&display=swap">
+<style>
+/* Layout: single 680px column, exam-hall feel — OMR bubbles, depot amber, steel-blue ink */
+:root{
+  --bg:#EEF1F6; --surface:#FFFFFF; --sunk:#E3E8F0; --ink:#13203A; --muted:#5A6479; --line:#D5DCE7;
+  --brand:#1E4A94; --brand-soft:#DCE6F7; --amber:#F2A900; --amber-ink:#2A1D00; --amber-soft:#FFF1CC;
+  --ok:#17834A; --ok-soft:#DDF3E6; --bad:#C9352B; --bad-soft:#FBE2DF;
+  --shadow:0 1px 2px rgba(19,32,58,.06),0 6px 20px rgba(19,32,58,.06);
+  --f-display:"Anek Gujarati","Noto Sans Gujarati","Shruti",system-ui,sans-serif;
+  --f-body:"Hind Vadodara","Noto Sans Gujarati","Shruti",system-ui,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D1422; --surface:#151F33; --sunk:#1C2840; --ink:#E7ECF5; --muted:#9AA6BC; --line:#26334D;
+  --brand:#7EA6EE; --brand-soft:#1D2D4D; --amber:#FFB81F; --amber-ink:#231800; --amber-soft:#3A2D0B;
+  --ok:#45C982; --ok-soft:#123426; --bad:#FF6F62; --bad-soft:#3D1A18;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1422; --surface:#151F33; --sunk:#1C2840; --ink:#E7ECF5; --muted:#9AA6BC; --line:#26334D;
+  --brand:#7EA6EE; --brand-soft:#1D2D4D; --amber:#FFB81F; --amber-ink:#231800; --amber-soft:#3A2D0B;
+  --ok:#45C982; --ok-soft:#123426; --bad:#FF6F62; --bad-soft:#3D1A18;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25); color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-tap-highlight-color:transparent}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 96px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.25}
+.num{font-variant-numeric:tabular-nums}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar-in{max-width:680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px;display:flex;align-items:center;gap:10px}
+.logo{display:flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:800;font-size:17px;text-decoration:none;color:var(--ink);min-width:0}
+.logo-mark{width:30px;height:30px;border-radius:8px;background:var(--brand);color:var(--surface);display:grid;place-items:center;font-size:13px;letter-spacing:.02em;flex:none}
+.logo small{display:block;font-family:var(--f-body);font-weight:500;font-size:11.5px;color:var(--muted);line-height:1.1}
+.spacer{flex:1}
+.icon-btn{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;flex:none}
+.icon-btn svg{width:20px;height:20px}
+.icon-btn[aria-pressed="false"]{color:var(--muted);opacity:.6}
+
+/* home */
+.hero{padding:22px 0 8px}
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.06em;color:var(--brand)}
+.hero h1{font-size:clamp(28px,7vw,40px);font-weight:800;margin-top:4px}
+.hero p{color:var(--muted);margin:6px 0 0;max-width:52ch}
+.stats{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 14px;min-width:0}
+.stat b{font-family:var(--f-display);font-size:20px;display:block;line-height:1.2}
+.stat span{font-size:12.5px;color:var(--muted)}
+
+.pattern{margin-top:22px;background:var(--surface);border-radius:var(--r);padding:16px;box-shadow:var(--shadow)}
+.pattern-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.pattern h2{font-size:17px}
+.pattern-h span{font-size:12.5px;color:var(--muted)}
+.pbar{display:flex;height:34px;border-radius:8px;overflow:hidden;margin-top:12px;gap:2px}
+.pbar div{display:grid;place-items:center;font-size:12px;font-weight:600;color:#fff;min-width:0}
+.legend{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:4px 12px;margin-top:10px;font-size:13px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:0}
+
+.sec-title{font-size:19px;margin:28px 0 10px}
+.subj{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden}
+.subj-h{display:flex;align-items:center;gap:12px;padding:14px 16px 10px}
+.subj-h h3{font-size:18px;flex:1;min-width:0}
+.marks{font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.topic{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--line);padding:12px 16px;min-height:52px}
+.topic:disabled{cursor:default;color:var(--muted)}
+.topic .t-name{flex:1;min-width:0;font-weight:500}
+.topic .t-meta{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.topic .soon{font-size:11.5px;border:1px dashed var(--line);border-radius:99px;padding:1px 8px;white-space:nowrap}
+.topic:not(:disabled):hover{background:var(--sunk)}
+.go{width:28px;height:28px;border-radius:50%;background:var(--amber);color:var(--amber-ink);display:grid;place-items:center;flex:none}
+.go svg{width:14px;height:14px}
+.mini{height:4px;border-radius:2px;background:var(--sunk);overflow:hidden;margin-top:4px}
+.mini i{display:block;height:100%;background:var(--ok)}
+
+.note{font-size:12.5px;color:var(--muted);margin-top:28px;border-top:1px solid var(--line);padding-top:14px}
+.note a{color:var(--brand)}
+
+/* topic */
+.back{display:inline-flex;align-items:center;gap:6px;background:none;border:0;padding:14px 0 6px;color:var(--muted);font-size:14.5px}
+.back svg{width:18px;height:18px}
+.t-head h1{font-size:clamp(26px,6vw,34px);font-weight:800}
+.t-head p{color:var(--muted);margin:4px 0 0}
+.prog{display:flex;align-items:center;gap:16px;background:var(--surface);border-radius:var(--r);padding:14px 16px;margin-top:16px;box-shadow:var(--shadow)}
+.ring{width:64px;height:64px;flex:none}
+.prog-txt{min-width:0}
+.prog-txt b{font-family:var(--f-display);font-size:18px}
+.prog-txt div{font-size:13.5px;color:var(--muted)}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.mode{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;text-align:left;display:flex;flex-direction:column;gap:2px;min-height:96px}
+.mode b{font-family:var(--f-display);font-size:17px}
+.mode span{font-size:13px;color:var(--muted)}
+.mode.primary{background:var(--brand);border-color:var(--brand);color:var(--surface)}
+.mode.primary span{color:var(--surface);opacity:.85}
+.mode.test{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+.mode.test span{color:var(--amber-ink);opacity:.8}
+.mode:disabled{opacity:.5;cursor:default}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 6px;margin-top:18px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:6px 14px;white-space:nowrap;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chips-label{font-size:12.5px;color:var(--muted);margin-top:18px;font-weight:600;letter-spacing:.04em}
+.link-btn{background:none;border:0;color:var(--muted);text-decoration:underline;font-size:13.5px;padding:8px 0}
+
+/* quiz */
+.qtop{display:flex;align-items:center;gap:10px;padding:12px 0 8px}
+.qcount{font-family:var(--f-display);font-weight:650;font-size:16px}
+.qcount small{color:var(--muted);font-weight:500}
+.streak{display:inline-flex;align-items:center;gap:4px;font-weight:600;font-size:14px;color:var(--ink);background:var(--amber-soft);border:1px solid var(--amber);border-radius:99px;padding:2px 10px}
+.timer{font-family:var(--f-display);font-weight:650;font-size:16px;padding:3px 12px;border-radius:99px;background:var(--brand-soft);color:var(--brand)}
+.timer.low{background:var(--bad-soft);color:var(--bad)}
+.track{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--brand);transition:width .3s}
+.qcard{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);padding:18px 16px;margin-top:14px}
+.qtag{display:inline-block;font-size:12px;font-weight:600;color:var(--brand);background:var(--brand-soft);border-radius:6px;padding:2px 8px}
+.qtext{font-family:var(--f-display);font-weight:650;font-size:clamp(19px,4.6vw,22px);line-height:1.45;margin:10px 0 16px}
+.qnum{color:var(--muted);margin-right:4px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:1.5px solid var(--line);background:var(--surface);border-radius:12px;padding:12px 14px;min-height:56px;transition:border-color .15s,background .15s,transform .1s}
+.opt:active{transform:scale(.99)}
+.bub{width:32px;height:32px;border-radius:50%;border:2px solid var(--muted);display:grid;place-items:center;font-weight:600;font-size:14px;flex:none;font-family:var(--f-body);transition:all .15s}
+.opt-t{flex:1;min-width:0;font-size:16.5px;font-weight:500}
+.opt.sel{border-color:var(--brand);background:var(--brand-soft)}
+.opt.sel .bub{background:var(--brand);border-color:var(--brand);color:var(--surface)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
+.opt.ok .bub{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
+.opt.bad .bub{background:var(--bad);border-color:var(--bad);color:var(--surface)}
+.opt.dim{opacity:.55}
+.opt:disabled{cursor:default}
+.shake{animation:shake .32s}
+@keyframes shake{20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+.pop{animation:pop .3s}
+@keyframes pop{50%{transform:scale(1.025)}}
+.qfig{margin:0 0 16px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);display:flex;justify-content:center}
+.qfig svg{width:100%;max-width:340px;height:auto;display:block}
+.qfig.sm{margin:6px 0 8px;padding:8px}.qfig.sm svg{max-width:240px}
+.exp{margin-top:14px;border-radius:12px;padding:12px 14px;background:var(--sunk);border-left:4px solid var(--ok)}
+.exp.bad{border-left-color:var(--bad)}
+.exp h4{margin:0 0 4px;font-family:var(--f-display);font-size:15.5px}
+.exp p{margin:0;font-size:15.5px}
+.qid{font-size:11.5px;color:var(--muted);margin-top:12px;display:flex;justify-content:space-between;gap:8px}
+.bm{background:none;border:0;padding:0;display:inline-flex;align-items:center;gap:4px;color:var(--muted);font-size:13px}
+.bm svg{width:18px;height:18px}
+.bm[aria-pressed="true"]{color:var(--amber)}
+.bm[aria-pressed="true"] svg{fill:var(--amber)}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.dock-in{max-width:680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px;display:flex;gap:10px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:0 18px;min-height:48px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.btn.main{flex:1;background:var(--brand);border-color:var(--brand);color:var(--surface)}
+.btn.amber{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+.btn:disabled{opacity:.45;cursor:default}
+
+/* palette + overlay */
+.sheet-bg{position:fixed;inset:0;background:rgba(10,16,30,.5);z-index:20;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--surface);width:100%;max-width:680px;border-radius:18px 18px 0 0;padding:18px max(16px,env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));max-height:80%;overflow:auto}
+.sheet h3{font-size:18px;margin-bottom:12px}
+.pal{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:8px}
+.pal button{height:44px;border-radius:10px;border:1.5px solid var(--line);background:var(--surface);font-weight:600}
+.pal button.done{background:var(--brand);border-color:var(--brand);color:var(--surface)}
+.pal button.cur{outline:3px solid var(--amber);outline-offset:1px}
+.sheet .row{display:flex;gap:10px;margin-top:16px}
+.sheet .row .btn{flex:1}
+.sheet p{color:var(--muted);margin:0}
+
+/* result */
+.res{text-align:center;padding-top:22px}
+.score{font-family:var(--f-display);font-weight:800;font-size:64px;line-height:1}
+.score small{font-size:28px;color:var(--muted);font-weight:650}
+.res h1{font-size:24px;margin-top:10px}
+.res p{color:var(--muted);margin:4px 0 0}
+.rstats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+.rstats div{background:var(--surface);border-radius:12px;padding:10px 6px;box-shadow:var(--shadow)}
+.rstats b{font-family:var(--f-display);font-size:22px;display:block}
+.rstats span{font-size:12.5px;color:var(--muted)}
+.rstats .g b{color:var(--ok)} .rstats .r b{color:var(--bad)}
+.ractions{display:grid;gap:10px;margin-top:18px}
+.wa{background:#1FA855;border-color:#1FA855;color:#fff;text-decoration:none}
+.review{margin-top:24px;text-align:left}
+.rv{background:var(--surface);border-radius:12px;padding:14px;margin-bottom:10px;box-shadow:var(--shadow);border-left:4px solid var(--line)}
+.rv.g{border-left-color:var(--ok)} .rv.r{border-left-color:var(--bad)}
+.rv h4{margin:0 0 6px;font-family:var(--f-display);font-size:16.5px;font-weight:650}
+.rv .a{font-size:14.5px}
+.rv .a.you{color:var(--bad)}
+.rv .a.right{color:var(--ok);font-weight:600}
+.rv .e{font-size:14.5px;color:var(--muted);margin-top:6px}
+
+.toast{position:fixed;left:50%;top:calc(70px + env(safe-area-inset-top,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);font-weight:600;padding:8px 18px;border-radius:99px;z-index:30;font-size:15px;box-shadow:var(--shadow);animation:toast 1.8s forwards;pointer-events:none;white-space:nowrap}
+@keyframes toast{0%{opacity:0;transform:translate(-50%,-8px)}12%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0}}
+.empty{text-align:center;color:var(--muted);padding:40px 0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:380px){.modes{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="bar"><div class="bar-in">
+  <a class="logo" href="#home" id="logo"><span class="logo-mark">ITI</span><span>ITI Lab ગુજરાતી<small>હેલ્પર ભરતી તૈયારી</small></span></a>
+  <span class="spacer"></span>
+  <button class="icon-btn" id="sndBtn" aria-label="અવાજ ચાલુ/બંધ" aria-pressed="true"></button>
+  <button class="icon-btn" id="vibBtn" aria-label="વાઇબ્રેશન ચાલુ/બંધ" aria-pressed="true"></button>
+</div></header>
+<main class="wrap" id="app"></main>
+<div id="dock"></div>
+<div id="layer"></div>
+
+<script>
+(function(){
+"use strict";
+const SHARE_URL="https://ashish119055.github.io/gsrtc-helper/";
+const BLOG_URL="https://itilabgujarati.blogspot.com";
+const TEST_SIZE=25;
+
+const SUBJECTS=[
+ {id:"gk",name:"સામાન્ય જ્ઞાન",marks:30,color:"#1E4A94",topics:[{id:"gujarat-geo",name:"ગુજરાતની ભૂગોળ અને વારસો",file:"data/gujarat-geo.json"},"ગુજરાતનો ઇતિહાસ","ગુજરાતની સંસ્કૃતિ","ભારતનું બંધારણ","સામાન્ય વિજ્ઞાન","કરંટ અફેર્સ"]},
+ {id:"comp",name:"કોમ્પ્યુટર",marks:10,color:"#2F8F9D",topics:[{id:"computer-basic",name:"કોમ્પ્યુટર બેઝિક",file:"data/computer-basic.json"},"MS Word","MS Excel","MS PowerPoint","ઇન્ટરનેટ અને ઇમેલ"]},
+ {id:"guj",name:"ગુજરાતી વ્યાકરણ",marks:5,color:"#B5543A",topics:[{id:"gujarati-vyakaran",name:"ગુજરાતી વ્યાકરણ — મિશ્ર",file:"data/gujarati-vyakaran.json"},"અલંકાર અને છંદ","કૃદંત અને કાળ","લેખક અને કૃતિ"]},
+ {id:"eng",name:"English Grammar",marks:5,color:"#7A4FB0",topics:[{id:"english-grammar",name:"English Grammar — Mixed",file:"data/english-grammar.json"},"Idioms & Phrases","Error Spotting","Comprehension"]},
+ {id:"trade",name:"ટ્રેડ થિયરી",marks:18,color:"#D88A00",topics:[{id:"hand-tools",name:"હેન્ડ ટુલ્સ અને માપ સાધનો",file:"data/hand-tools.json"},"એન્જિન","ઓટોમોબાઈલ સિસ્ટમ","વેલ્ડીંગ અને ફાસ્ટનર","લેથ અને મશીન શોપ"]},
+ {id:"wcs",name:"વર્કશોપ ગણતરી અને વિજ્ઞાન",marks:17,color:"#2E7D4F",topics:[{id:"wcs-basic",name:"એકમો, ગણતરી અને વિજ્ઞાન",file:"data/wcs-basic.json"},"ધાતુ અને હીટ ટ્રીટમેન્ટ","લીવર, ગરગડી અને ગિયર","ઇલેક્ટ્રિસિટી — આગળ"]},
+ {id:"ed",name:"એન્જિનિયરિંગ ડ્રોઇંગ",marks:15,color:"#5B6479",topics:[{id:"ed-basic",name:"ED મૂળભૂત (આકૃતિ સાથે)",file:"data/ed-basic.json"},"ઓર્થોગ્રાફિક વ્યૂ ઓળખો","ફાસ્ટનર અને વેલ્ડીંગ ચિહ્નો","ભૌમિતિક રચના"]}
+];
+
+/* ---------- storage ---------- */
+const KEY="itilab_helper_v1";
+let S={snd:true,vib:true,q:{},bm:{},best:{}};
+try{const raw=localStorage.getItem(KEY); if(raw) S=Object.assign(S,JSON.parse(raw));}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+
+/* ---------- sound + vibration ---------- */
+let ac=null;
+function audio(){ if(!S.snd) return null;
+  try{ if(!ac) ac=new (window.AudioContext||window.webkitAudioContext)(); if(ac.state==="suspended") ac.resume(); }catch(e){ac=null}
+  return ac; }
+function tone(f,t0,d,type,vol,f2){const c=audio(); if(!c) return;
+  const t=c.currentTime+t0, o=c.createOscillator(), g=c.createGain();
+  o.type=type||"sine"; o.frequency.setValueAtTime(f,t); if(f2) o.frequency.exponentialRampToValueAtTime(f2,t+d);
+  g.gain.setValueAtTime(0.0001,t); g.gain.exponentialRampToValueAtTime(vol||.16,t+.012); g.gain.exponentialRampToValueAtTime(0.0001,t+d);
+  o.connect(g).connect(c.destination); o.start(t); o.stop(t+d+.02);}
+const sfx={
+  tap(){tone(560,0,.05,"triangle",.06)},
+  ok(streak){tone(660,0,.11,"sine",.16);tone(990,.08,.2,"sine",.15); if(streak&&streak%5===0){tone(1320,.2,.16,"sine",.13);tone(1760,.3,.28,"sine",.11)}},
+  bad(){tone(210,0,.16,"square",.06,150);tone(150,.13,.24,"square",.06,110)},
+  finish(){[523,659,784,1047].forEach((f,i)=>tone(f,i*.11,.26,"sine",.14))}
+};
+function buzz(p){ if(!S.vib) return; try{ navigator.vibrate&&navigator.vibrate(p);}catch(e){} }
+
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const L=["A","B","C","D"];
+const ICON={
+ snd:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>',
+ mute:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9 5 6M21 9l-5 6"/></svg>',
+ vib:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M3 8v8M21 8v8"/></svg>',
+ back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18 9 12l6-6"/></svg>',
+ go:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>',
+ star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>'
+};
+function paintToggles(){
+  $("#sndBtn").innerHTML=S.snd?ICON.snd:ICON.mute; $("#sndBtn").setAttribute("aria-pressed",S.snd);
+  $("#vibBtn").innerHTML=ICON.vib; $("#vibBtn").setAttribute("aria-pressed",S.vib);}
+$("#sndBtn").onclick=()=>{S.snd=!S.snd;save();paintToggles();if(S.snd)sfx.ok();toast(S.snd?"અવાજ ચાલુ":"અવાજ બંધ")};
+$("#vibBtn").onclick=()=>{S.vib=!S.vib;save();paintToggles();buzz(40);toast(S.vib?"વાઇબ્રેશન ચાલુ":"વાઇબ્રેશન બંધ")};
+function toast(t){const d=document.createElement("div");d.className="toast";d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1900)}
+function fmt(s){s=Math.max(0,s|0);return String(s/60|0).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+
+/* ---------- data ---------- */
+const cache={};
+async function loadTopic(t){ if(cache[t.id]) return cache[t.id];
+  const r=await fetch(t.file); if(!r.ok) throw new Error(r.status); const d=await r.json(); cache[t.id]=d; return d;}
+function topicStats(d){let done=0,ok=0,wrong=0,bm=0;
+  for(const q of d.questions){const r=S.q[q.id]; if(r){done++; if(r.r)ok++; else wrong++} if(S.bm[q.id])bm++}
+  return {done,ok,wrong,bm,total:d.questions.length};}
+function allStats(){let done=0,ok=0;for(const k in S.q){done++;if(S.q[k].r)ok++}return{done,ok}}
+
+/* ---------- views ---------- */
+let V={view:"home"}; let timerId=null;
+function setDock(html){$("#dock").innerHTML=html?'<div class="dock"><div class="dock-in">'+html+'</div></div>':""}
+function setLayer(html){$("#layer").innerHTML=html||""}
+function go(view,extra){ clearInterval(timerId); setLayer(""); V=Object.assign({view},extra||{}); render(); window.scrollTo(0,0); }
+
+function render(){
+  if(V.view==="home") return home();
+  if(V.view==="topic") return topic();
+  if(V.view==="quiz") return quiz();
+  if(V.view==="result") return result();
+}
+
+function home(){
+  setDock("");
+  const a=allStats(), acc=a.done?Math.round(a.ok*100/a.done):0;
+  const segs=SUBJECTS.map(s=>`<div style="flex:${s.marks};background:${s.color}" title="${esc(s.name)}">${s.marks}</div>`).join("");
+  const leg=SUBJECTS.map(s=>`<div><i style="background:${s.color}"></i>${esc(s.name)} <span class="num" style="color:var(--muted)">${s.marks}</span></div>`).join("");
+  const subj=SUBJECTS.map(s=>{
+    const rows=s.topics.map(t=>{
+      if(typeof t==="string") return `<button class="topic" disabled><span class="t-name">${esc(t)}</span><span class="soon">ટૂંક સમયમાં</span></button>`;
+      const d=cache[t.id], st=d?topicStats(d):null;
+      const meta=st?`${st.done}/${st.total} કર્યા`:"MCQ + સમજૂતી";
+      const bar=st?`<div class="mini"><i style="width:${st.done*100/st.total}%"></i></div>`:"";
+      return `<button class="topic" data-t="${t.id}"><span class="t-name">${esc(t.name)}${bar}</span><span class="t-meta num">${meta}</span><span class="go">${ICON.go}</span></button>`;
+    }).join("");
+    return `<section class="subj"><div class="subj-h"><h3>${esc(s.name)}</h3><span class="marks num" style="background:${s.color}22;color:${s.color}">${s.marks} ગુણ</span></div>${rows}</section>`;
+  }).join("");
+  $("#app").innerHTML=`
+  <div class="hero">
+    <div class="eyebrow">મફત · દરેક પ્રશ્ન સમજૂતી સાથે</div>
+    <h1>GSRTC હેલ્પર ભરતી<br>પૂરી તૈયારી, એક જ જગ્યાએ</h1>
+    <p>પરીક્ષાની પેટર્ન મુજબ વિષયવાર MCQ. જવાબ આપો, તરત સાચું-ખોટું જાણો અને કારણ સમજો.</p>
+    <div class="stats">
+      <div class="stat"><b class="num">${a.done}</b><span>પ્રશ્ન કર્યા</span></div>
+      <div class="stat"><b class="num">${acc}%</b><span>ચોકસાઈ</span></div>
+    </div>
+  </div>
+  <section class="pattern">
+    <div class="pattern-h"><h2>100 ગુણનું પેપર</h2><span>ગયા વર્ષની પરીક્ષા મુજબ</span></div>
+    <div class="pbar">${segs}</div>
+    <div class="legend">${leg}</div>
+  </section>
+  <h2 class="sec-title">વિષય પસંદ કરો</h2>
+  ${subj}
+  <p class="note">આ ITI Lab ગુજરાતીનું સ્વતંત્ર, મફત તૈયારી પ્લેટફોર્મ છે; GSRTC સાથે તેનું કોઈ સત્તાવાર જોડાણ નથી. ભરતીની સત્તાવાર માહિતી માટે હંમેશાં સત્તાવાર જાહેરાત જુઓ. વધુ સિમ્યુલેટર અને સામગ્રી: <a href="${BLOG_URL}" target="_blank" rel="noopener">ITI Lab ગુજરાતી બ્લોગ</a></p>`;
+  document.querySelectorAll("[data-t]").forEach(b=>b.onclick=async()=>{
+    sfx.tap(); const t=findTopic(b.dataset.t);
+    try{await loadTopic(t); go("topic",{t, sub:-1});}catch(e){toast("ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો")}
+  });
+  // warm stats for ready topics
+  SUBJECTS.forEach(s=>s.topics.forEach(t=>{ if(typeof t!=="string"&&!cache[t.id]) loadTopic(t).then(()=>V.view==="home"&&home()).catch(()=>{}) }));
+}
+function findTopic(id){for(const s of SUBJECTS)for(const t of s.topics)if(typeof t!=="string"&&t.id===id)return t}
+
+function ring(p){const r=27,c=2*Math.PI*r;return `<svg class="ring" viewBox="0 0 64 64"><circle cx="32" cy="32" r="${r}" fill="none" stroke="var(--sunk)" stroke-width="7"/>${p>0?`<circle cx="32" cy="32" r="${r}" fill="none" stroke="var(--ok)" stroke-width="7" stroke-linecap="round" stroke-dasharray="${c*p} ${c}" transform="rotate(-90 32 32)"/>`:""}<text x="32" y="37" text-anchor="middle" font-size="15" font-weight="700" fill="var(--ink)" font-family="Hind Vadodara,sans-serif">${Math.round(p*100)}%</text></svg>`}
+
+function topic(){
+  const d=cache[V.t.id], st=topicStats(d), acc=st.done?Math.round(st.ok*100/st.done):0;
+  const pool=filtered(d); const best=S.best[d.id];
+  const chips=[`<button class="chip" data-s="-1" aria-pressed="${V.sub===-1}">બધા (${d.questions.length})</button>`].concat(d.subtopics.map((n,i)=>{
+    const c=d.questions.filter(q=>q.s===i+1).length; return `<button class="chip" data-s="${i+1}" aria-pressed="${V.sub===i+1}">${esc(n)} (${c})</button>`})).join("");
+  setDock("");
+  $("#app").innerHTML=`
+  <button class="back" id="bk">${ICON.back}બધા વિષય</button>
+  <div class="t-head"><h1>${esc(d.title)}</h1><p class="num">${d.questions.length} MCQ · ${d.subtopics.length} પેટા-વિભાગ · દરેક સમજૂતી સાથે</p></div>
+  <div class="prog">${ring(st.done/st.total)}<div class="prog-txt"><b class="num">${st.done} / ${st.total} પ્રશ્ન કર્યા</b><div class="num">ચોકસાઈ ${acc}% · સાચા ${st.ok} · ખોટા ${st.wrong}${best!=null?` · ટેસ્ટમાં શ્રેષ્ઠ ${best}%`:""}</div></div></div>
+  <div class="chips-label">વિભાગ પસંદ કરો</div>
+  <div class="chips" id="chips">${chips}</div>
+  <div class="modes">
+    <button class="mode primary" id="mPr"><b>પ્રેક્ટિસ</b><span>જવાબ આપો, તરત સમજૂતી જુઓ · ${pool.length} પ્રશ્ન</span></button>
+    <button class="mode test" id="mTs"><b>મોક ટેસ્ટ</b><span>${Math.min(TEST_SIZE,pool.length)} પ્રશ્ન · ${Math.min(TEST_SIZE,pool.length)} મિનિટ · પરિણામ અંતે</span></button>
+    <button class="mode" id="mWr" ${st.wrong?"":"disabled"}><b>ભૂલ સુધારો</b><span>ખોટા પડેલા ${st.wrong} પ્રશ્ન ફરી</span></button>
+    <button class="mode" id="mBm" ${st.bm?"":"disabled"}><b>સાચવેલા</b><span>${st.bm} પ્રશ્ન ⭑ કરેલા</span></button>
+  </div>
+  <button class="link-btn" id="rst">આ ટોપિકની પ્રગતિ શૂન્ય કરો</button>`;
+  $("#bk").onclick=()=>{sfx.tap();go("home")};
+  document.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{sfx.tap();V.sub=+b.dataset.s;topic()});
+  $("#mPr").onclick=()=>startPractice(pool,"practice");
+  $("#mTs").onclick=()=>startTest(pool);
+  $("#mWr").onclick=()=>startPractice(d.questions.filter(q=>S.q[q.id]&&!S.q[q.id].r),"wrong");
+  $("#mBm").onclick=()=>startPractice(d.questions.filter(q=>S.bm[q.id]),"bm");
+  $("#rst").onclick=()=>confirmBox("પ્રગતિ શૂન્ય કરવી છે?","આ ટોપિકના બધા જવાબ, ભૂલો અને સાચવેલા પ્રશ્નો દૂર થશે.","હા, શૂન્ય કરો",()=>{
+    d.questions.forEach(q=>{delete S.q[q.id];delete S.bm[q.id]}); delete S.best[d.id]; save(); topic(); toast("પ્રગતિ શૂન્ય થઈ")});
+}
+function filtered(d){return V.sub===-1?d.questions:d.questions.filter(q=>q.s===V.sub)}
+
+function confirmBox(title,body,yes,fn){
+  setLayer(`<div class="sheet-bg" id="sb"><div class="sheet" role="dialog" aria-modal="true"><h3>${esc(title)}</h3><p>${esc(body)}</p><div class="row"><button class="btn" id="cNo">રદ કરો</button><button class="btn main" id="cYes">${esc(yes)}</button></div></div></div>`);
+  $("#cNo").onclick=()=>setLayer(""); $("#sb").onclick=e=>{if(e.target.id==="sb")setLayer("")};
+  $("#cYes").onclick=()=>{setLayer("");fn()};
+}
+
+/* ---------- practice ---------- */
+function startPractice(list,kind){
+  if(!list.length) return toast("આ વિભાગમાં પ્રશ્ન નથી");
+  sfx.tap(); audio();
+  let start=0; if(kind==="practice"){const i=list.findIndex(q=>!S.q[q.id]); start=i<0?0:i;}
+  go("quiz",{mode:"practice",kind,list,i:start,ans:{},streak:0,d:cache[V.t.id],t:V.t,sub:V.sub});
+}
+/* ---------- test ---------- */
+function startTest(pool){
+  if(!pool.length) return toast("આ વિભાગમાં પ્રશ્ન નથી");
+  sfx.tap(); audio();
+  const list=shuffle(pool).slice(0,TEST_SIZE);
+  go("quiz",{mode:"test",list,i:0,ans:{},left:list.length*60,started:Date.now(),d:cache[V.t.id],t:V.t,sub:V.sub});
+}
+
+function quiz(){
+  const q=V.list[V.i], n=V.list.length, picked=V.ans[q.id], test=V.mode==="test";
+  const answered=!test&&picked!=null;
+  const opts=q.o.map((o,k)=>{
+    let cls="opt";
+    if(test){ if(picked===k) cls+=" sel"; }
+    else if(answered){ if(k===q.a) cls+=" ok"; else if(k===picked) cls+=" bad"; else cls+=" dim"; }
+    return `<button class="${cls}" data-k="${k}" ${answered?"disabled":""}><span class="bub">${L[k]}</span><span class="opt-t">${esc(o)}</span></button>`;
+  }).join("");
+  const exp=answered?`<div class="exp ${picked===q.a?"":"bad"}"><h4>${picked===q.a?"સાચો જવાબ!":"સાચો જવાબ: ("+L[q.a]+") "+esc(q.o[q.a])}</h4><p>${esc(q.e)}</p></div>`:"";
+  const kindLabel={practice:"પ્રેક્ટિસ",wrong:"ભૂલ સુધારો",bm:"સાચવેલા"}[V.kind]||"";
+  const top=test
+    ?`<span class="qcount num">${V.i+1}<small> / ${n}</small></span><span class="spacer"></span><button class="btn" id="palBtn" style="min-height:36px;padding:0 12px">બધા પ્રશ્ન</button><span class="timer num" id="tmr">${fmt(V.left)}</span>`
+    :`<span class="qcount num">${V.i+1}<small> / ${n} · ${kindLabel}</small></span><span class="spacer"></span>${V.streak>=2?`<span class="streak num">સળંગ ${V.streak} સાચા</span>`:""}`;
+  $("#app").innerHTML=`
+  <button class="back" id="bk">${ICON.back}${test?"ટેસ્ટ છોડો":"ટોપિક પર પાછા"}</button>
+  <div class="qtop">${top}</div>
+  <div class="track"><i style="width:${(test?Object.keys(V.ans).length:V.i+(answered?1:0))*100/n}%"></i></div>
+  <article class="qcard" id="qc">
+    <span class="qtag">${esc(V.d.subtopics[q.s-1])}</span>
+    <h2 class="qtext"><span class="qnum num">${V.i+1}.</span>${esc(q.q)}</h2>
+    ${q.img?`<figure class="qfig">${q.img}</figure>`:""}<div class="opts" id="opts">${opts}</div>
+    ${exp}
+    <div class="qid"><span>પ્રશ્ન ID: ${q.id}</span><button class="bm" id="bmB" aria-pressed="${!!S.bm[q.id]}">${ICON.star}${S.bm[q.id]?"સાચવેલ":"સાચવો"}</button></div>
+  </article>`;
+  // dock
+  if(test){
+    const last=V.i===n-1;
+    setDock(`<button class="btn" id="prv" ${V.i?"":"disabled"}>પાછળ</button>${last?`<button class="btn amber main" id="sub" style="background:var(--amber);border-color:var(--amber);color:var(--amber-ink)">સબમિટ કરો</button>`:`<button class="btn main" id="nxt">આગળ</button>`}`);
+  }else{
+    setDock(`<button class="btn" id="prv" ${V.i?"":"disabled"}>પાછળ</button><button class="btn main" id="nxt" ${answered?"":"disabled"}>${V.i===n-1?"પૂરું કરો":"આગળ"}</button>`);
+  }
+  $("#bk").onclick=()=>{ if(test) confirmBox("ટેસ્ટ છોડવો છે?","અત્યાર સુધીના જવાબો ગણાશે નહીં.","હા, છોડો",()=>go("topic",{t:V.t,sub:V.sub})); else go("topic",{t:V.t,sub:V.sub}); };
+  document.querySelectorAll("#opts .opt").forEach(b=>b.onclick=()=>choose(+b.dataset.k));
+  $("#bmB").onclick=()=>{ if(S.bm[q.id]) delete S.bm[q.id]; else S.bm[q.id]=1; save(); sfx.tap(); buzz(15); quizKeepScroll(); };
+  const prv=$("#prv"); if(prv) prv.onclick=()=>{sfx.tap();V.i--;quiz();window.scrollTo(0,0)};
+  const nxt=$("#nxt"); if(nxt) nxt.onclick=next;
+  const sub=$("#sub"); if(sub) sub.onclick=askSubmit;
+  const pal=$("#palBtn"); if(pal) pal.onclick=palette;
+  if(test){ clearInterval(timerId); timerId=setInterval(tick,1000); }
+}
+function quizKeepScroll(){const y=window.scrollY;quiz();window.scrollTo(0,y)}
+function choose(k){
+  const q=V.list[V.i];
+  if(V.mode==="test"){ V.ans[q.id]=k; sfx.tap(); buzz(12); quizKeepScroll(); return; }
+  if(V.ans[q.id]!=null) return;
+  V.ans[q.id]=k; const ok=k===q.a;
+  const prev=S.q[q.id]; S.q[q.id]={r:ok?1:0,n:(prev?prev.n:0)+1}; save();
+  if(ok){V.streak++; sfx.ok(V.streak); buzz(25); if(V.streak%5===0) setTimeout(()=>toast(`વાહ! સળંગ ${V.streak} સાચા`),150);}
+  else{V.streak=0; sfx.bad(); buzz([70,50,70]);}
+  quizKeepScroll();
+  const el=document.querySelector(`#opts .opt[data-k="${k}"]`); if(el) el.classList.add(ok?"pop":"shake");
+  const ex=document.querySelector(".exp"); if(ex&&ex.getBoundingClientRect().bottom>innerHeight-80) ex.scrollIntoView({behavior:"smooth",block:"center"});
+}
+function next(){
+  sfx.tap();
+  if(V.i<V.list.length-1){V.i++;quiz();window.scrollTo(0,0);return}
+  if(V.mode==="practice"){ // finish practice round
+    const tot=V.list.length, ok=V.list.filter(q=>V.ans[q.id]===q.a).length;
+    sfx.finish(); buzz([30,40,30,40,120]);
+    go("result",{practice:true,list:V.list,ans:V.ans,ok,tot,d:V.d,t:V.t,sub:V.sub,secs:0});
+  }
+}
+function tick(){
+  if(V.view!=="quiz"||V.mode!=="test"){clearInterval(timerId);return}
+  V.left--; const el=$("#tmr"); if(el){el.textContent=fmt(V.left); el.classList.toggle("low",V.left<=60)}
+  if(V.left===60){toast("છેલ્લી 1 મિનિટ");buzz([40,60,40])}
+  if(V.left<=0){clearInterval(timerId);toast("સમય પૂરો");submitTest()}
+}
+function palette(){
+  sfx.tap();
+  const cells=V.list.map((q,i)=>`<button class="${V.ans[q.id]!=null?"done":""} ${i===V.i?"cur":""} num" data-j="${i}">${i+1}</button>`).join("");
+  const done=Object.keys(V.ans).length;
+  setLayer(`<div class="sheet-bg" id="sb"><div class="sheet" role="dialog" aria-modal="true"><h3>બધા પ્રશ્ન · <span class="num">${done}/${V.list.length}</span> જવાબ આપ્યા</h3><div class="pal">${cells}</div><div class="row"><button class="btn" id="cNo">બંધ કરો</button><button class="btn main" id="cYes">સબમિટ કરો</button></div></div></div>`);
+  $("#sb").onclick=e=>{if(e.target.id==="sb")setLayer("")};
+  $("#cNo").onclick=()=>setLayer("");
+  $("#cYes").onclick=()=>{setLayer("");askSubmit()};
+  document.querySelectorAll(".pal [data-j]").forEach(b=>b.onclick=()=>{setLayer("");V.i=+b.dataset.j;quiz();window.scrollTo(0,0)});
+}
+function askSubmit(){
+  const left=V.list.length-Object.keys(V.ans).length;
+  confirmBox("ટેસ્ટ સબમિટ કરવો છે?", left?`હજુ ${left} પ્રશ્નના જવાબ બાકી છે.`:"બધા પ્રશ્નના જવાબ આપ્યા છે.","હા, સબમિટ કરો",submitTest);
+}
+function submitTest(){
+  clearInterval(timerId);
+  let ok=0; V.list.forEach(q=>{const k=V.ans[q.id]; if(k==null) return; const r=k===q.a; if(r) ok++; const p=S.q[q.id]; S.q[q.id]={r:r?1:0,n:(p?p.n:0)+1};});
+  const pct=Math.round(ok*100/V.list.length); const d=V.d;
+  if(S.best[d.id]==null||pct>S.best[d.id]) S.best[d.id]=pct; save();
+  sfx.finish(); buzz([30,40,30,40,120]);
+  go("result",{practice:false,list:V.list,ans:V.ans,ok,tot:V.list.length,d,t:V.t,sub:V.sub,secs:Math.round((Date.now()-V.started)/1000)});
+}
+
+/* ---------- result ---------- */
+function result(){
+  setDock("");
+  const {ok,tot,list,ans}=V; const wrong=list.filter(q=>ans[q.id]!=null&&ans[q.id]!==q.a).length; const skip=tot-ok-wrong;
+  const pct=Math.round(ok*100/tot);
+  const msg=pct>=85?["જોરદાર! તમે તૈયાર છો","આ ઝડપ અને ચોકસાઈ પરીક્ષા સુધી જાળવી રાખો."]:pct>=60?["સરસ પ્રયાસ","ખોટા પડેલા પ્રશ્નો ‘ભૂલ સુધારો’માં ફરી કરો, સ્કોર ઝડપથી વધશે."]:["શરૂઆત થઈ ગઈ, હવે રોજ થોડું","પહેલાં પ્રેક્ટિસ મોડમાં સમજૂતી સાથે વાંચો, પછી ફરી ટેસ્ટ આપો."];
+  const share=encodeURIComponent(`મેં GSRTC હેલ્પર ભરતીના "${V.d.title}" ${V.practice?"પ્રેક્ટિસ":"મોક ટેસ્ટ"}માં ${tot}માંથી ${ok} સાચા કર્યા! તમે પણ મફત પ્રેક્ટિસ કરો, દરેક પ્રશ્ન સમજૂતી સાથે:\n${SHARE_URL}`);
+  const rv=list.map((q,i)=>{const k=ans[q.id]; const r=k===q.a; const cls=k==null?"":(r?"g":"r");
+    return `<div class="rv ${cls}"><h4><span class="num" style="color:var(--muted)">${i+1}.</span> ${esc(q.q)}</h4>${q.img?`<figure class="qfig sm">${q.img}</figure>`:""}
+    ${k!=null&&!r?`<div class="a you">તમારો જવાબ: (${L[k]}) ${esc(q.o[k])}</div>`:""}${k==null?`<div class="a" style="color:var(--muted)">જવાબ આપ્યો નથી</div>`:""}
+    <div class="a right">સાચો જવાબ: (${L[q.a]}) ${esc(q.o[q.a])}</div><div class="e">${esc(q.e)}</div></div>`}).join("");
+  $("#app").innerHTML=`
+  <button class="back" id="bk">${ICON.back}ટોપિક પર પાછા</button>
+  <div class="res">
+    <div class="score num">${ok}<small> / ${tot}</small></div>
+    <h1>${msg[0]}</h1><p>${msg[1]}</p>
+    <div class="rstats">
+      <div class="g"><b class="num">${ok}</b><span>સાચા</span></div>
+      <div class="r"><b class="num">${wrong}</b><span>ખોટા</span></div>
+      <div><b class="num">${V.practice?pct+"%":fmt(V.secs)}</b><span>${V.practice?"ચોકસાઈ":"સમય લીધો"}</span></div>
+    </div>
+    <div class="ractions">
+      <a class="btn wa" href="https://wa.me/?text=${share}" target="_blank" rel="noopener">WhatsApp પર મિત્રોને મોકલો</a>
+      <button class="btn main" id="again">${V.practice?"ટોપિક પર પાછા":"નવો ટેસ્ટ આપો"}</button>
+    </div>
+  </div>
+  <section class="review"><h2 class="sec-title" style="margin-top:8px">જવાબ અને સમજૂતી</h2>${rv}</section>`;
+  $("#bk").onclick=()=>go("topic",{t:V.t,sub:V.sub});
+  $("#again").onclick=()=>{ if(V.practice) go("topic",{t:V.t,sub:V.sub}); else { V.sub=V.sub; const pool=V.sub===-1?V.d.questions:V.d.questions.filter(q=>q.s===V.sub); startTest(pool);} };
+}
+
+/* ---------- keyboard ---------- */
+document.addEventListener("keydown",e=>{
+  if(V.view!=="quiz"||$("#layer").innerHTML) return;
+  const m={"1":0,"2":1,"3":2,"4":3,"a":0,"b":1,"c":2,"d":3}[e.key.toLowerCase()];
+  if(m!=null){choose(m);e.preventDefault();return}
+  if(e.key==="Enter"||e.key==="ArrowRight"){const n=$("#nxt");if(n&&!n.disabled){n.click();e.preventDefault()}}
+  if(e.key==="ArrowLeft"){const p=$("#prv");if(p&&!p.disabled)p.click()}
+});
+$("#logo").onclick=e=>{e.preventDefault();go("home")};
+
+paintToggles(); render();
+})();
+</script>
+
+</body>
+</html>
