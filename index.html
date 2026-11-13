@@ -5,9 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#1E4A94">
 <meta property="og:title" content="GSRTC હેલ્પર ભરતી — મફત MCQ પ્રેક્ટિસ">
-<meta property="og:description" content="7 વિષય, દરેક પ્રશ્ન સમજૂતી સાથે. મોક ટેસ્ટ, ભૂલ સુધારો અને આકૃતિવાળા ED પ્રશ્નો. ITI Lab ગુજરાતી.">
+<meta property="og:description" content="7 વિષય, હજારો MCQ, દરેક પ્રશ્ન સમજૂતી સાથે. રોજનો ટેસ્ટ, 100 ગુણનો મોક ટેસ્ટ અને ભૂલ સુધારો. ITI Lab ગુજરાતી.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashish119055.github.io/gsrtc-helper/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="હેલ્પર MCQ">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E4A94'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23F2A900' stroke-width='6'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23fff'/%3E%3C/svg%3E">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>ITI Lab હેલ્પર તૈયારી</title>
@@ -210,6 +215,92 @@ h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.2
 .empty{text-align:center;color:var(--muted);padding:40px 0}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media (max-width:380px){.modes{grid-template-columns:1fr}}
+
+/* ===== v2: retention + ease ===== */
+:root{--fs:1}
+.qtext{font-size:calc(clamp(19px,4.6vw,22px)*var(--fs))}
+.opt-t{font-size:calc(16.5px*var(--fs))}
+.exp p{font-size:calc(15.5px*var(--fs))}
+.pill{display:inline-flex;align-items:center;gap:4px;font-weight:700;font-size:14px;border-radius:99px;padding:4px 10px;background:var(--amber-soft);border:1px solid var(--amber);color:var(--ink)}
+.pill svg{width:16px;height:16px;color:var(--amber)}
+.pill.off{background:var(--sunk);border-color:var(--line);color:var(--muted)}
+.pill.off svg{color:var(--muted)}
+.hello{padding:16px 0 0}
+.hello h1{font-size:clamp(22px,5.6vw,30px);font-weight:800}
+.hello p{margin:2px 0 0;color:var(--muted);font-size:14.5px}
+.today{display:flex;align-items:center;gap:14px;background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);padding:14px 16px;margin-top:14px}
+.today .ring{width:72px;height:72px}
+.today-t{min-width:0;flex:1}
+.today-t b{font-family:var(--f-display);font-size:18px;display:block;line-height:1.3}
+.today-t span{font-size:13.5px;color:var(--muted);display:block}
+.week{display:flex;gap:6px;margin-top:8px}
+.week i{flex:1;max-width:34px;height:26px;border-radius:7px;background:var(--sunk);display:grid;place-items:center;font-style:normal;font-size:11.5px;font-weight:600;color:var(--muted)}
+.week i.on{background:var(--ok);color:#fff}
+.week i.now{outline:2px solid var(--amber);outline-offset:1px}
+.cta{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:0;border-radius:var(--r);background:var(--brand);color:var(--surface);padding:14px 16px;margin-top:12px;min-height:76px;box-shadow:var(--shadow)}
+.cta-t{flex:1;min-width:0}
+.cta small{display:block;font-size:12.5px;font-weight:600;letter-spacing:.04em;opacity:.85}
+.cta b{display:block;font-family:var(--f-display);font-size:19px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cta em{display:block;font-style:normal;font-size:13px;opacity:.85}
+.cta .go{width:38px;height:38px}
+.cta .go svg{width:18px;height:18px}
+.cta:active,.qa:active,.subj-h:active{transform:scale(.99)}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.qa{display:flex;flex-direction:column;gap:2px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;min-height:92px;position:relative}
+.qa svg{width:22px;height:22px;margin-bottom:4px}
+.qa b{font-family:var(--f-display);font-size:16.5px;line-height:1.3}
+.qa span{font-size:12.5px;color:var(--muted)}
+.qa.amber{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+.qa.amber span{color:var(--amber-ink);opacity:.8}
+.qa.done{border-color:var(--ok)}
+.qa.done svg{color:var(--ok)}
+.qa:disabled{opacity:.55;cursor:default}
+.badge{position:absolute;top:10px;right:10px;min-width:24px;height:24px;border-radius:12px;background:var(--bad);color:#fff;font-size:12.5px;font-weight:700;display:grid;place-items:center;padding:0 7px}
+.badge.star{background:var(--amber);color:var(--amber-ink)}
+.overall{margin-top:14px;font-size:13.5px;color:var(--muted)}
+.overall b{color:var(--ink);font-family:var(--f-display);font-size:15px}
+.overall .mini{height:6px;border-radius:3px;margin-top:6px}
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 12px;margin-bottom:12px}
+.search svg{width:18px;height:18px;color:var(--muted);flex:none}
+.search input{flex:1;min-width:0;border:0;background:none;font:inherit;color:inherit;padding:11px 0;outline:0}
+.search:focus-within{border-color:var(--brand)}
+.subj-h{width:100%;border:0;background:none;text-align:left;padding:14px 16px 12px;min-height:60px}
+.subj-h .dot{width:10px;height:36px;border-radius:5px;flex:none}
+.subj-h h3{font-size:17.5px}
+.subj-h .sj-sub{display:block;font-family:var(--f-body);font-weight:500;font-size:12.5px;color:var(--muted);margin-top:1px}
+.chev{width:22px;height:22px;flex:none;color:var(--muted);transition:transform .2s}
+.subj[data-open="1"] .chev{transform:rotate(180deg)}
+.subj .mini.wide{margin:0 16px 12px;height:4px}
+.subj[data-open="1"] .mini.wide{margin-bottom:10px}
+.topic .tick{width:22px;height:22px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;flex:none}
+.topic .tick svg{width:13px;height:13px}
+.install{display:flex;align-items:center;gap:12px;background:var(--amber-soft);border:1px solid var(--amber);border-radius:var(--r);padding:12px 14px;margin-top:12px}
+.install div{flex:1;min-width:0;font-size:13.5px}
+.install b{display:block;font-family:var(--f-display);font-size:15.5px}
+.srow{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.srow:first-of-type{border-top:0}
+.srow>span{flex:1;min-width:0;font-weight:500}
+.srow small{display:block;color:var(--muted);font-weight:400;font-size:12.5px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;flex:none}
+.seg button{border:0;background:var(--surface);padding:8px 12px;font-size:14px;min-height:40px}
+.seg button[aria-pressed="true"]{background:var(--brand);color:var(--surface);font-weight:600}
+.sw{width:52px;height:30px;border-radius:15px;border:0;background:var(--line);position:relative;flex:none;transition:background .15s}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform .15s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.sw[aria-pressed="true"]{background:var(--ok)}
+.sw[aria-pressed="true"]::after{transform:translateX(22px)}
+.bd{margin-top:18px;text-align:left;background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);padding:14px 16px}
+.bd h3{font-size:16.5px;margin-bottom:8px}
+.bd-r{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;margin-top:8px;font-size:14px}
+.bd-r .mini{grid-column:1/-1;height:6px;border-radius:3px;margin:0}
+.goalline{margin-top:14px;font-size:14px;background:var(--surface);border-radius:12px;padding:10px 14px;box-shadow:var(--shadow);display:flex;align-items:center;gap:8px;justify-content:center}
+.goalline svg{width:18px;height:18px;color:var(--amber)}
+.loading{text-align:center;padding:10px 0 4px}
+.spin{width:34px;height:34px;border-radius:50%;border:4px solid var(--sunk);border-top-color:var(--brand);margin:0 auto 12px;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sheet .mode{width:100%;margin-top:10px;min-height:0}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:40;overflow:hidden}
+.confetti i{position:absolute;top:-12px;width:9px;height:14px;border-radius:2px;animation:fall 1.6s ease-in forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(540deg);opacity:.2}}
 </style>
 </head>
 <body>
@@ -217,8 +308,8 @@ h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.2
 <header class="bar"><div class="bar-in">
   <a class="logo" href="#home" id="logo"><span class="logo-mark">ITI</span><span>ITI Lab ગુજરાતી<small>હેલ્પર ભરતી તૈયારી</small></span></a>
   <span class="spacer"></span>
-  <button class="icon-btn" id="sndBtn" aria-label="અવાજ ચાલુ/બંધ" aria-pressed="true"></button>
-  <button class="icon-btn" id="vibBtn" aria-label="વાઇબ્રેશન ચાલુ/બંધ" aria-pressed="true"></button>
+  <button id="stk" style="background:none;border:0;padding:0" aria-label="સળંગ દિવસ"></button>
+  <button class="icon-btn" id="setBtn" aria-label="સેટિંગ્સ"></button>
 </div></header>
 <main class="wrap" id="app"></main>
 <div id="dock"></div>
@@ -241,11 +332,56 @@ const SUBJECTS=[
  {id:"ed",name:"એન્જિનિયરિંગ ડ્રોઇંગ",marks:15,color:"#5B6479",topics:[{id:"ed-basic",name:"ED મૂળભૂત (આકૃતિ સાથે)",file:"data/ed-basic.json"},{id:"ed-ortho",name:"ઓર્થોગ્રાફિક વ્યૂ ઓળખો (આકૃતિ સાથે)",file:"data/ed-ortho.json"},{id:"ed-symbols-geometry",name:"ચિહ્નો, ભૌમિતિક રચના અને વક્રો",file:"data/ed-symbols-geometry.json"},{id:"ed-dimensions",name:"માપ વાંચન અને સ્કેલ (આકૃતિ સાથે)",file:"data/ed-dimensions.json"}]}
 ];
 
+
+/* ---------- topic index (prefix + count, auto-filled by src/manifest.py) ---------- */
+const COUNTS={"gujarat-geo":["GG",210],"gujarat-history":["GH",142],"constitution":["IC",215],"general-science":["GS",274],"current-affairs":["CA",75],"gujarat-culture":["GC",111],"india-history":["IH",169],"india-geo":["IG",152],"static-gk":["SG",201],"economy":["EC",113],"computer-basic":["CB",369],"ms-word":["MW",113],"ms-excel":["MX",130],"ms-powerpoint":["PP",61],"internet-email":["IE",76],"comp-number":["CN",350],"gujarati-vyakaran":["GV",355],"alankar-chhand":["AC",50],"kaal-krudant":["KK",65],"gujarati-sahitya":["GL",139],"english-grammar":["EN",392],"english-idioms":["EI",173],"english-errors":["EE",115],"hand-tools":["HT",115],"engine":["EG",236],"auto-systems":["AS",169],"welding-fasteners":["WF",110],"lathe-machines":["LM",137],"auto-electrical":["AE",65],"bearings-lube":["BL",50],"limits-fits":["LF",48],"sheet-metal":["SM",58],"tyres-wheels":["TW",109],"drilling":["DR",87],"threads-fasteners":["TH",94],"milling-grinding":["MG",82],"measuring-marking":["MM",84],"diesel-fuel":["DF",66],"chassis-brakes":["CH",74],"workshop-safety":["SF",63],"wcs-basic":["WS",160],"metals-heat":["MH",98],"lever-gears":["LG",82],"electricity-2":["E2",169],"hydraulics":["HY",63],"calc-area":["CA2",262],"calc-percent":["CP",197],"calc-mech":["CM",267],"calc-elec":["CE",243],"calc-math":["CMA",217],"calc-trade":["CT",921],"aptitude":["AP",1303],"ed-basic":["ED",106],"ed-ortho":["EO",33],"ed-symbols-geometry":["ES",50],"ed-dimensions":["EDD",134]};
+const TOPICS=[]; SUBJECTS.forEach(s=>s.topics.forEach(t=>{const c=COUNTS[t.id]||["",0]; t.p=c[0]; t.n=c[1]; t.sj=s; TOPICS.push(t)}));
+const TOTAL=TOPICS.reduce((a,t)=>a+t.n,0);
+const byPrefix={}; TOPICS.forEach(t=>{byPrefix[t.p]=t});
+const idMemo={};
+function topicOfId(id){ if(id in idMemo) return idMemo[id];
+  const m=/^([A-Z]+)(\d+)$/.exec(id); let r=null;
+  if(m) for(let k=0;k<=1&&!r;k++){const t=byPrefix[m[1]+m[2].slice(0,k)], rest=m[2].slice(k);
+    if(t&&rest.length>=3&&+rest>=1&&+rest<=t.n) r=t;}
+  return idMemo[id]=r; }
+function findTopic(id){return TOPICS.find(t=>t.id===id)}
+const nf=n=>Number(n).toLocaleString("en-IN");
+
 /* ---------- storage ---------- */
 const KEY="itilab_helper_v1";
-let S={snd:true,vib:true,q:{},bm:{},best:{}};
+let S={snd:true,vib:true,q:{},bm:{},best:{},days:{},goal:20,last:null,theme:"auto",fs:0,open:{},daily:null};
 try{const raw=localStorage.getItem(KEY); if(raw) S=Object.assign(S,JSON.parse(raw));}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+function applyLook(){const r=document.documentElement;
+  if(S.theme==="auto") r.removeAttribute("data-theme"); else r.setAttribute("data-theme",S.theme);
+  r.style.setProperty("--fs",[1,1.15,1.3][S.fs]||1);}
+
+/* ---------- days, streak, goal ---------- */
+const pad=n=>String(n).padStart(2,"0");
+const dk=d=>{d=d||new Date();return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())};
+function dayAgo(n){const d=new Date();d.setDate(d.getDate()-n);return d}
+function todayN(){const o=S.days[dk()];return o?o.n:0}
+function streak(){let n=0,i=S.days[dk()]?0:1; while(S.days[dk(dayAgo(i))]){n++;i++} return n}
+let PROG=null, TOT=Object.keys(S.q).length;
+const MILE=[50,100,250,500,1000,2000,3000,5000,7500,10000,15000];
+function bumpDay(n,ok,fresh){
+  const k=dk(), o=S.days[k]||(S.days[k]={n:0,ok:0}), before=o.n, first=before===0;
+  o.n+=n; o.ok+=ok; PROG=null;
+  const keys=Object.keys(S.days); if(keys.length>120){keys.sort().slice(0,keys.length-120).forEach(x=>delete S.days[x])}
+  const t0=TOT; TOT+=fresh||0;
+  const mile=MILE.find(m=>t0<m&&TOT>=m);
+  if(mile){ setTimeout(()=>{toast(nf(mile)+" પ્રશ્ન પૂરા! જોરદાર");sfx.finish();confetti()},500); }
+  else if(before<S.goal&&o.n>=S.goal){ setTimeout(()=>{toast("આજનું લક્ષ્ય પૂરું! સળંગ "+streak()+" દિવસ");sfx.finish();confetti()},500); }
+  else if(first&&streak()>1){ setTimeout(()=>toast("સળંગ "+streak()+" દિવસ — ચાલુ રાખો!"),500); }
+}
+function confetti(){ try{ if(matchMedia("(prefers-reduced-motion:reduce)").matches) return; }catch(e){}
+  const c=document.createElement("div"); c.className="confetti"; const col=["#F2A900","#1E4A94","#17834A","#C9352B","#7A4FB0"];
+  for(let i=0;i<36;i++){const p=document.createElement("i"); p.style.left=Math.random()*100+"%"; p.style.background=col[i%5]; p.style.animationDelay=Math.random()*.5+"s"; c.appendChild(p)}
+  document.body.appendChild(c); setTimeout(()=>c.remove(),2400); }
+function progress(){ if(PROG) return PROG;
+  const by={}; let done=0,ok=0,wrong=0;
+  for(const k in S.q){const t=topicOfId(k); if(!t) continue; const o=by[t.id]||(by[t.id]={d:0,o:0,w:0}); o.d++; done++; if(S.q[k].r){o.o++;ok++}else{o.w++;wrong++}}
+  return PROG={by,done,ok,wrong,bm:Object.keys(S.bm).length}; }
 
 /* ---------- sound + vibration ---------- */
 let ac=null;
@@ -269,22 +405,24 @@ function buzz(p){ if(!S.vib) return; try{ navigator.vibrate&&navigator.vibrate(p
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const L=["A","B","C","D"];
+const svg=(d,w)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${w||2}" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
 const ICON={
- snd:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>',
- mute:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9 5 6M21 9l-5 6"/></svg>',
- vib:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M3 8v8M21 8v8"/></svg>',
- back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18 9 12l6-6"/></svg>',
- go:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>',
- star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>'
+ gear:svg('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.8 1.2V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0-1.2-2.8H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 2.8-1.2V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0 1.2 2.8h.1a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1.1z"/>',1.7),
+ flame:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 3.5 5 6 5 11a5 5 0 0 1-10 0c0-1.6.6-2.9 1.4-4 .3 1.4 1 2.3 2 2.6C10 8.500 10.500 5 12 2z"/></svg>',
+ back:svg('<path d="M15 18 9 12l6-6"/>',2.2),
+ go:svg('<path d="m9 18 6-6-6-6"/>',3),
+ chev:svg('<path d="m6 9 6 6 6-6"/>',2.2),
+ check:svg('<path d="m5 12.5 4.500 4.500L19 7.500"/>',3),
+ search:svg('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/>'),
+ star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 2.700 5.600 6.100.9-4.400 4.300 1 6.100L12 17l-5.400 2.900 1-6.100-4.400-4.300 6.100-.9z"/></svg>',
+ cal:svg('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m9 15.500 2 2 4-4"/>'),
+ paper:svg('<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/>'),
+ redo:svg('<path d="M3 12a9 9 0 1 0 3-6.700"/><path d="M3 4v5h5"/>'),
 };
-function paintToggles(){
-  $("#sndBtn").innerHTML=S.snd?ICON.snd:ICON.mute; $("#sndBtn").setAttribute("aria-pressed",S.snd);
-  $("#vibBtn").innerHTML=ICON.vib; $("#vibBtn").setAttribute("aria-pressed",S.vib);}
-$("#sndBtn").onclick=()=>{S.snd=!S.snd;save();paintToggles();if(S.snd)sfx.ok();toast(S.snd?"અવાજ ચાલુ":"અવાજ બંધ")};
-$("#vibBtn").onclick=()=>{S.vib=!S.vib;save();paintToggles();buzz(40);toast(S.vib?"વાઇબ્રેશન ચાલુ":"વાઇબ્રેશન બંધ")};
 function toast(t){const d=document.createElement("div");d.className="toast";d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1900)}
 function fmt(s){s=Math.max(0,s|0);return String(s/60|0).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
-function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+function shuffle(a,rnd){rnd=rnd||Math.random;a=a.slice();for(let i=a.length-1;i>0;i--){const j=rnd()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+function seeded(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
 
 /* ---------- data ---------- */
 const cache={};
@@ -293,13 +431,36 @@ async function loadTopic(t){ if(cache[t.id]) return cache[t.id];
 function topicStats(d){let done=0,ok=0,wrong=0,bm=0;
   for(const q of d.questions){const r=S.q[q.id]; if(r){done++; if(r.r)ok++; else wrong++} if(S.bm[q.id])bm++}
   return {done,ok,wrong,bm,total:d.questions.length};}
-function allStats(){let done=0,ok=0;for(const k in S.q){done++;if(S.q[k].r)ok++}return{done,ok}}
+function loadingSheet(msg){setLayer(`<div class="sheet-bg"><div class="sheet" role="dialog" aria-modal="true"><div class="loading"><div class="spin"></div><p>${esc(msg||"પ્રશ્નો લોડ થાય છે…")}</p></div></div></div>`)}
+async function loadMany(ts){ return Promise.all(ts.map(loadTopic)); }
 
-/* ---------- views ---------- */
+/* ---------- navigation (phone back button works) ---------- */
 let V={view:"home"}; let timerId=null;
+let stack=[], histOK=true, skipConfirm=false, homeFlag=false;
 function setDock(html){$("#dock").innerHTML=html?'<div class="dock"><div class="dock-in">'+html+'</div></div>':""}
 function setLayer(html){$("#layer").innerHTML=html||""}
-function go(view,extra){ clearInterval(timerId); setLayer(""); V=Object.assign({view},extra||{}); render(); window.scrollTo(0,0); }
+function push(){ if(!histOK) return; try{history.pushState({i:stack.length},"")}catch(e){histOK=false} }
+function go(view,extra,replace){ clearInterval(timerId); setLayer("");
+  if(!replace){stack.push(V); push()}
+  V=Object.assign({view},extra||{}); render(); window.scrollTo(0,0); }
+function popView(){ clearInterval(timerId); skipConfirm=false; V=stack.pop()||{view:"home"}; render(); window.scrollTo(0,0); }
+function inTest(){return V.view==="quiz"&&V.mode==="test"}
+function leaveTest(fn){confirmBox("ટેસ્ટ છોડવો છે?","અત્યાર સુધીના જવાબો ગણાશે નહીં.","હા, છોડો",fn)}
+function navBack(){
+  if(inTest()&&!skipConfirm) return leaveTest(()=>{skipConfirm=true;navBack()});
+  if(histOK&&stack.length){ try{history.back();return}catch(e){histOK=false} }
+  popView(); }
+function goHome(){
+  if(inTest()&&!skipConfirm) return leaveTest(()=>{skipConfirm=true;goHome()});
+  skipConfirm=false;
+  if(histOK&&stack.length){ homeFlag=true; try{history.go(-stack.length);return}catch(e){histOK=false;homeFlag=false} }
+  stack=[]; clearInterval(timerId); V={view:"home"}; render(); window.scrollTo(0,0); }
+window.addEventListener("popstate",()=>{
+  if($("#layer").innerHTML&&!homeFlag&&!skipConfirm){ setLayer(""); push(); return; }
+  if(homeFlag){ homeFlag=false; stack=[]; clearInterval(timerId); setLayer(""); V={view:"home"}; render(); window.scrollTo(0,0); return; }
+  if(inTest()&&!skipConfirm){ push(); leaveTest(()=>{skipConfirm=true;history.back()}); return; }
+  setLayer(""); popView();
+});
 
 function render(){
   if(V.view==="home") return home();
@@ -308,77 +469,160 @@ function render(){
   if(V.view==="result") return result();
 }
 
+/* ---------- home ---------- */
+const WD=["ર","સો","મં","બુ","ગુ","શુ","શ"];
+function ring(p,label){const r=27,c=2*Math.PI*r;return `<svg class="ring" viewBox="0 0 64 64"><circle cx="32" cy="32" r="${r}" fill="none" stroke="var(--sunk)" stroke-width="7"/>${p>0?`<circle cx="32" cy="32" r="${r}" fill="none" stroke="var(--ok)" stroke-width="7" stroke-linecap="round" stroke-dasharray="${c*Math.min(1,p)} ${c}" transform="rotate(-90 32 32)"/>`:""}<text x="32" y="37" text-anchor="middle" font-size="15" font-weight="700" fill="var(--ink)" font-family="Hind Vadodara,sans-serif">${label!=null?label:Math.round(p*100)+"%"}</text></svg>`}
+let deferredInstall=null;
+function paintBar(){ const s=streak(), on=!!S.days[dk()];
+  $("#stk").innerHTML=`<span class="pill num ${on?"":"off"}" title="સળંગ દિવસ">${ICON.flame}${s}</span>`; }
+
 function home(){
-  setDock("");
-  const a=allStats(), acc=a.done?Math.round(a.ok*100/a.done):0;
+  setDock(""); paintBar();
+  const P=progress(), acc=P.done?Math.round(P.ok*100/P.done):0, tn=todayN(), st=streak();
+  const week=[6,5,4,3,2,1,0].map(i=>{const d=dayAgo(i);return `<i class="${S.days[dk(d)]?"on":""} ${i===0?"now":""}">${WD[d.getDay()]}</i>`}).join("");
+  const left=Math.max(0,S.goal-tn);
+  const todayMsg=tn>=S.goal?"આજનું લક્ષ્ય પૂરું! શાબાશ":(tn?`લક્ષ્યથી ${left} પ્રશ્ન દૂર`:"આજે હજુ શરૂઆત બાકી છે");
+  const stMsg=st>1?`સળંગ ${st} દિવસ`:(st===1?"સળંગ 1 દિવસ — કાલે પણ આવજો":"આજે શરૂ કરો, સળંગ દિવસ બનાવો");
+  // continue / start CTA
+  const lt=S.last&&findTopic(S.last.t); let cta;
+  if(lt){const o=P.by[lt.id]||{d:0}; cta=`<button class="cta" id="cta"><span class="cta-t"><small>ચાલુ રાખો</small><b>${esc(lt.name)}</b><em class="num">${nf(o.d)} / ${nf(lt.n)} કર્યા</em></span><span class="go">${ICON.go}</span></button>`}
+  else cta=`<button class="cta" id="cta"><span class="cta-t"><small>અહીંથી શરૂ કરો</small><b>આજનો ટેસ્ટ — 10 પ્રશ્ન</b><em>ફક્ત 5 મિનિટ · દરેક જવાબની સમજૂતી</em></span><span class="go">${ICON.go}</span></button>`;
+  const dd=S.daily&&S.daily.k===dk()?S.daily:null;
+  const b100=S.best.mock100;
+  $("#app").innerHTML=`
+  <div class="hello"><h1>GSRTC હેલ્પર ભરતી તૈયારી</h1><p class="num">${nf(TOTAL)}+ મફત MCQ · દરેક પ્રશ્ન સમજૂતી સાથે</p></div>
+  <section class="today" aria-label="આજની પ્રગતિ">
+    ${ring(tn/S.goal,tn+"/"+S.goal)}
+    <div class="today-t"><b>${todayMsg}</b><span>${stMsg}</span><div class="week" aria-hidden="true">${week}</div></div>
+  </section>
+  ${cta}
+  <div class="quick">
+    <button class="qa ${dd?"done":""}" id="qDaily">${dd?ICON.check:ICON.cal}<b>આજનો ટેસ્ટ</b><span class="num">${dd?`${dd.ok}/${dd.tot} સાચા · કાલે નવો`:"10 પ્રશ્ન · બધા વિષય"}</span></button>
+    <button class="qa amber" id="qMock">${ICON.paper}<b>મોક ટેસ્ટ</b><span class="num">${b100!=null?`શ્રેષ્ઠ ${b100}% · `:""}પરીક્ષાની પેટર્ન મુજબ</span></button>
+    <button class="qa" id="qWrong" ${P.wrong?"":"disabled"}>${ICON.redo}<b>ભૂલ સુધારો</b><span>${P.wrong?"ખોટા પડેલા પ્રશ્ન ફરી":"હજુ કોઈ ભૂલ નથી"}</span>${P.wrong?`<i class="badge num">${nf(P.wrong)}</i>`:""}</button>
+    <button class="qa" id="qBm" ${P.bm?"":"disabled"}>${ICON.star}<b>સાચવેલા</b><span>${P.bm?"તમે ⭑ કરેલા પ્રશ્ન":"પ્રશ્ન પર ⭑ દબાવી સાચવો"}</span>${P.bm?`<i class="badge star num">${nf(P.bm)}</i>`:""}</button>
+  </div>
+  ${deferredInstall?`<div class="install"><div><b>ફોનમાં એપની જેમ રાખો</b>હોમ સ્ક્રીન પર ઉમેરો — ઝડપથી ખૂલશે</div><button class="btn amber" id="inst">ઉમેરો</button></div>`:""}
+  <div class="overall"><b class="num">${nf(P.done)} / ${nf(TOTAL)}</b> પ્રશ્ન કર્યા · ચોકસાઈ <b class="num">${acc}%</b><div class="mini"><i style="width:${P.done*100/TOTAL}%"></i></div></div>
+  <h2 class="sec-title">વિષય પસંદ કરો</h2>
+  <label class="search">${ICON.search}<input id="q" type="search" placeholder="ટોપિક શોધો — દા.ત. એન્જિન, Excel" autocomplete="off" value="${esc(V.q||"")}"></label>
+  <div id="subjList"></div>
+  <div class="ractions"><a class="btn wa" id="shareApp" href="https://wa.me/?text=${encodeURIComponent("GSRTC હેલ્પર ભરતીની મફત તૈયારી — "+nf(TOTAL)+"+ MCQ, દરેક સમજૂતી સાથે, મોક ટેસ્ટ પણ:\n"+SHARE_URL)}" target="_blank" rel="noopener">મિત્રોને WhatsApp પર મોકલો</a></div>
+  <p class="note">આ ITI Lab ગુજરાતીનું સ્વતંત્ર, મફત તૈયારી પ્લેટફોર્મ છે; GSRTC સાથે તેનું કોઈ સત્તાવાર જોડાણ નથી. ભરતીની સત્તાવાર માહિતી માટે હંમેશાં સત્તાવાર જાહેરાત જુઓ. વધુ સિમ્યુલેટર અને સામગ્રી: <a href="${BLOG_URL}" target="_blank" rel="noopener">ITI Lab ગુજરાતી બ્લોગ</a></p>`;
+  paintSubjects();
+  $("#q").oninput=e=>{V.q=e.target.value;paintSubjects()};
+  $("#cta").onclick=()=>{ if(lt) resume(lt,S.last.sub); else startDaily(); };
+  $("#qDaily").onclick=startDaily;
+  $("#qMock").onclick=mockSheet;
+  $("#qWrong").onclick=()=>startCollected("wrong");
+  $("#qBm").onclick=()=>startCollected("bm");
+  const ib=$("#inst"); if(ib) ib.onclick=async()=>{const e=deferredInstall; deferredInstall=null; try{e.prompt(); await e.userChoice}catch(x){} if(V.view==="home") home()};
+}
+function paintSubjects(){
+  const P=progress(), term=(V.q||"").trim().toLowerCase();
+  const row=t=>{const o=P.by[t.id]||{d:0}, full=o.d>=t.n&&t.n>0;
+    return `<button class="topic" data-t="${t.id}"><span class="t-name">${esc(t.name)}<div class="mini"><i style="width:${t.n?o.d*100/t.n:0}%"></i></div></span><span class="t-meta num">${nf(o.d)}/${nf(t.n)}</span>${full?`<span class="tick">${ICON.check}</span>`:`<span class="go">${ICON.go}</span>`}</button>`};
+  let html;
+  if(term){
+    const hit=TOPICS.filter(t=>(t.name+" "+t.sj.name).toLowerCase().includes(term));
+    html=hit.length?`<section class="subj">${hit.map(row).join("")}</section>`:`<p class="empty">“${esc(V.q)}” માટે કોઈ ટોપિક ન મળ્યો</p>`;
+  }else html=SUBJECTS.map(s=>{
+    let d=0,n=0; s.topics.forEach(t=>{n+=t.n; d+=(P.by[t.id]||{d:0}).d});
+    const open=S.open[s.id]?1:0;
+    return `<section class="subj" data-open="${open}"><button class="subj-h" data-sj="${s.id}" aria-expanded="${!!open}"><span class="dot" style="background:${s.color}"></span><h3>${esc(s.name)}<span class="sj-sub num">${s.topics.length} ટોપિક · ${nf(d)}/${nf(n)} કર્યા</span></h3><span class="marks num" style="background:${s.color}22;color:${s.color}">${s.marks} ગુણ</span><span class="chev">${ICON.chev}</span></button><div class="mini wide"><i style="width:${n?d*100/n:0}%;background:${s.color}"></i></div>${open?s.topics.map(row).join(""):""}</section>`}).join("");
+  $("#subjList").innerHTML=html;
+  document.querySelectorAll("[data-sj]").forEach(b=>b.onclick=()=>{sfx.tap(); const id=b.dataset.sj; if(S.open[id]) delete S.open[id]; else S.open[id]=1; save(); paintSubjects()});
+  document.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>openTopic(findTopic(b.dataset.t)));
+}
+async function openTopic(t){ sfx.tap();
+  try{ if(!cache[t.id]) loadingSheet(); await loadTopic(t); go("topic",{t,sub:-1}); }catch(e){setLayer("");toast("ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો")} }
+async function resume(t,sub){ sfx.tap();
+  try{ if(!cache[t.id]) loadingSheet(); const d=await loadTopic(t); sub=(sub>0&&sub<=d.subtopics.length)?sub:-1;
+    const pool=sub===-1?d.questions:d.questions.filter(q=>q.s===sub);
+    if(pool.every(q=>S.q[q.id])){ go("topic",{t,sub:-1}); return; }
+    startPractice(pool,"practice",{t,sub,d});
+  }catch(e){setLayer("");toast("ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો")} }
+
+/* ---------- mixed sets: daily test, mock test, all mistakes ---------- */
+function pickTopics(s,k,rnd){ // weighted by size, without replacement
+  const pool=s.topics.slice(), out=[];
+  while(out.length<k&&pool.length){let tot=pool.reduce((a,t)=>a+t.n,0), r=rnd()*tot, i=0; while(i<pool.length-1&&(r-=pool[i].n)>0) i++; out.push(pool.splice(i,1)[0])}
+  return out; }
+async function buildMixed(plan,rnd,maxT){
+  const jobs=plan.map(([sid,cnt])=>{const s=SUBJECTS.find(x=>x.id===sid); return {cnt,ts:pickTopics(s,Math.min(cnt,maxT),rnd)}});
+  await loadMany([].concat(...jobs.map(j=>j.ts)));
+  const list=[];
+  jobs.forEach(j=>{ const per=j.ts.map(t=>shuffle(cache[t.id].questions,rnd)); let k=0,guard=0;
+    while(k<j.cnt&&guard<j.cnt*4){const a=per[guard%per.length]; if(a.length){list.push(a.pop());k++} guard++} });
+  return list; }
+function dailyPlan(){ const d=new Date(), doy=Math.floor((d-new Date(d.getFullYear(),0,0))/864e5);
+  return [["gk",3],["comp",1],[doy%2?"guj":"eng",1],["trade",2],["wcs",2],["ed",1]]; }
+async function startDaily(){ sfx.tap(); audio(); loadingSheet("આજનો ટેસ્ટ તૈયાર થાય છે…");
+  try{ const d=new Date(), seed=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();
+    const list=await buildMixed(dailyPlan(),seeded(seed),1);
+    startPractice(list,"daily",{mixed:"આજનો ટેસ્ટ",fresh:true});
+  }catch(e){setLayer("");toast("ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો")} }
+function mockSheet(){ sfx.tap();
   const segs=SUBJECTS.map(s=>`<div style="flex:${s.marks};background:${s.color}" title="${esc(s.name)}">${s.marks}</div>`).join("");
   const leg=SUBJECTS.map(s=>`<div><i style="background:${s.color}"></i>${esc(s.name)} <span class="num" style="color:var(--muted)">${s.marks}</span></div>`).join("");
-  const subj=SUBJECTS.map(s=>{
-    const rows=s.topics.map(t=>{
-      if(typeof t==="string") return `<button class="topic" disabled><span class="t-name">${esc(t)}</span><span class="soon">ટૂંક સમયમાં</span></button>`;
-      const d=cache[t.id], st=d?topicStats(d):null;
-      const meta=st?`${st.done}/${st.total} કર્યા`:"MCQ + સમજૂતી";
-      const bar=st?`<div class="mini"><i style="width:${st.done*100/st.total}%"></i></div>`:"";
-      return `<button class="topic" data-t="${t.id}"><span class="t-name">${esc(t.name)}${bar}</span><span class="t-meta num">${meta}</span><span class="go">${ICON.go}</span></button>`;
-    }).join("");
-    return `<section class="subj"><div class="subj-h"><h3>${esc(s.name)}</h3><span class="marks num" style="background:${s.color}22;color:${s.color}">${s.marks} ગુણ</span></div>${rows}</section>`;
-  }).join("");
-  $("#app").innerHTML=`
-  <div class="hero">
-    <div class="eyebrow">મફત · દરેક પ્રશ્ન સમજૂતી સાથે</div>
-    <h1>GSRTC હેલ્પર ભરતી<br>પૂરી તૈયારી, એક જ જગ્યાએ</h1>
-    <p>પરીક્ષાની પેટર્ન મુજબ વિષયવાર MCQ. જવાબ આપો, તરત સાચું-ખોટું જાણો અને કારણ સમજો.</p>
-    <div class="stats">
-      <div class="stat"><b class="num">${a.done}</b><span>પ્રશ્ન કર્યા</span></div>
-      <div class="stat"><b class="num">${acc}%</b><span>ચોકસાઈ</span></div>
-    </div>
-  </div>
-  <section class="pattern">
-    <div class="pattern-h"><h2>100 ગુણનું પેપર</h2><span>ગયા વર્ષની પરીક્ષા મુજબ</span></div>
-    <div class="pbar">${segs}</div>
-    <div class="legend">${leg}</div>
-  </section>
-  <h2 class="sec-title">વિષય પસંદ કરો</h2>
-  ${subj}
-  <p class="note">આ ITI Lab ગુજરાતીનું સ્વતંત્ર, મફત તૈયારી પ્લેટફોર્મ છે; GSRTC સાથે તેનું કોઈ સત્તાવાર જોડાણ નથી. ભરતીની સત્તાવાર માહિતી માટે હંમેશાં સત્તાવાર જાહેરાત જુઓ. વધુ સિમ્યુલેટર અને સામગ્રી: <a href="${BLOG_URL}" target="_blank" rel="noopener">ITI Lab ગુજરાતી બ્લોગ</a></p>`;
-  document.querySelectorAll("[data-t]").forEach(b=>b.onclick=async()=>{
-    sfx.tap(); const t=findTopic(b.dataset.t);
-    try{await loadTopic(t); go("topic",{t, sub:-1});}catch(e){toast("ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો")}
-  });
-  // warm stats for ready topics
-  SUBJECTS.forEach(s=>s.topics.forEach(t=>{ if(typeof t!=="string"&&!cache[t.id]) loadTopic(t).then(()=>V.view==="home"&&home()).catch(()=>{}) }));
+  const b1=S.best.mock100, b2=S.best.mock25;
+  setLayer(`<div class="sheet-bg" id="sb"><div class="sheet" role="dialog" aria-modal="true"><h3>મોક ટેસ્ટ — 100 ગુણના પેપરની પેટર્ન</h3>
+    <div class="pbar" style="margin-top:0">${segs}</div><div class="legend">${leg}</div>
+    <button class="mode test" id="mk100"><b>પૂર્ણ ટેસ્ટ</b><span class="num">100 પ્રશ્ન · 100 મિનિટ${b1!=null?` · શ્રેષ્ઠ ${b1}%`:""}</span></button>
+    <button class="mode" id="mk25"><b>ઝડપી ટેસ્ટ</b><span class="num">25 પ્રશ્ન · 25 મિનિટ${b2!=null?` · શ્રેષ્ઠ ${b2}%`:""}</span></button>
+    <div class="row"><button class="btn" id="cNo">બંધ કરો</button></div></div></div>`);
+  $("#sb").onclick=e=>{if(e.target.id==="sb")setLayer("")}; $("#cNo").onclick=()=>setLayer("");
+  $("#mk100").onclick=()=>startMock(100); $("#mk25").onclick=()=>startMock(25);
 }
-function findTopic(id){for(const s of SUBJECTS)for(const t of s.topics)if(typeof t!=="string"&&t.id===id)return t}
+const PLAN25=[["gk",8],["comp",2],["guj",1],["eng",1],["trade",5],["wcs",4],["ed",4]];
+async function startMock(size){ sfx.tap(); audio(); loadingSheet("મોક ટેસ્ટ તૈયાર થાય છે…");
+  try{ const plan=size===100?SUBJECTS.map(s=>[s.id,s.marks]):PLAN25;
+    const list=await buildMixed(plan,Math.random,3);
+    const d={id:"mock"+size,title:size===100?"પૂર્ણ મોક ટેસ્ટ":"ઝડપી મોક ટેસ્ટ",subtopics:[],questions:list};
+    go("quiz",{mode:"test",list,i:0,ans:{},left:list.length*60,started:Date.now(),d,t:null,sub:-1,mixed:true,size},V.view==="result");
+  }catch(e){setLayer("");toast("ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો")} }
+async function startCollected(kind){ sfx.tap();
+  const want=kind==="wrong"?Object.keys(S.q).filter(k=>!S.q[k].r):Object.keys(S.bm);
+  const g={}; want.forEach(id=>{const t=topicOfId(id); if(t)(g[t.id]||(g[t.id]=[])).push(id)});
+  const ts=Object.keys(g).sort((a,b)=>g[b].length-g[a].length).slice(0,6).map(findTopic);
+  if(!ts.length) return toast("અહીં હજુ કોઈ પ્રશ્ન નથી");
+  loadingSheet();
+  try{ await loadMany(ts); const list=[];
+    ts.forEach(t=>{const set=new Set(g[t.id]); cache[t.id].questions.forEach(q=>{if(set.has(q.id)&&list.length<50)list.push(q)})});
+    if(!list.length){setLayer("");return toast("અહીં હજુ કોઈ પ્રશ્ન નથી")}
+    startPractice(list,kind,{mixed:kind==="wrong"?"ભૂલ સુધારો — બધા વિષય":"સાચવેલા પ્રશ્ન",fresh:true});
+  }catch(e){setLayer("");toast("ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો")} }
 
-function ring(p){const r=27,c=2*Math.PI*r;return `<svg class="ring" viewBox="0 0 64 64"><circle cx="32" cy="32" r="${r}" fill="none" stroke="var(--sunk)" stroke-width="7"/>${p>0?`<circle cx="32" cy="32" r="${r}" fill="none" stroke="var(--ok)" stroke-width="7" stroke-linecap="round" stroke-dasharray="${c*p} ${c}" transform="rotate(-90 32 32)"/>`:""}<text x="32" y="37" text-anchor="middle" font-size="15" font-weight="700" fill="var(--ink)" font-family="Hind Vadodara,sans-serif">${Math.round(p*100)}%</text></svg>`}
-
+/* ---------- topic ---------- */
 function topic(){
+  paintBar();
   const d=cache[V.t.id], st=topicStats(d), acc=st.done?Math.round(st.ok*100/st.done):0;
-  const pool=filtered(d); const best=S.best[d.id];
+  const pool=filtered(d); const best=S.best[d.id]; const pdone=pool.filter(q=>S.q[q.id]).length;
   const chips=[`<button class="chip" data-s="-1" aria-pressed="${V.sub===-1}">બધા (${d.questions.length})</button>`].concat(d.subtopics.map((n,i)=>{
-    const c=d.questions.filter(q=>q.s===i+1).length; return `<button class="chip" data-s="${i+1}" aria-pressed="${V.sub===i+1}">${esc(n)} (${c})</button>`})).join("");
+    const c=d.questions.filter(q=>q.s===i+1).length; return c?`<button class="chip" data-s="${i+1}" aria-pressed="${V.sub===i+1}">${esc(n)} (${c})</button>`:""})).join("");
   setDock("");
   $("#app").innerHTML=`
   <button class="back" id="bk">${ICON.back}બધા વિષય</button>
-  <div class="t-head"><h1>${esc(d.title)}</h1><p class="num">${d.questions.length} MCQ · ${d.subtopics.length} પેટા-વિભાગ · દરેક સમજૂતી સાથે</p></div>
-  <div class="prog">${ring(st.done/st.total)}<div class="prog-txt"><b class="num">${st.done} / ${st.total} પ્રશ્ન કર્યા</b><div class="num">ચોકસાઈ ${acc}% · સાચા ${st.ok} · ખોટા ${st.wrong}${best!=null?` · ટેસ્ટમાં શ્રેષ્ઠ ${best}%`:""}</div></div></div>
+  <div class="t-head"><h1>${esc(d.title)}</h1><p class="num">${nf(d.questions.length)} MCQ · ${d.subtopics.length} પેટા-વિભાગ · દરેક સમજૂતી સાથે</p></div>
+  <div class="prog">${ring(st.done/st.total)}<div class="prog-txt"><b class="num">${nf(st.done)} / ${nf(st.total)} પ્રશ્ન કર્યા</b><div class="num">ચોકસાઈ ${acc}% · સાચા ${st.ok} · ખોટા ${st.wrong}${best!=null?` · ટેસ્ટમાં શ્રેષ્ઠ ${best}%`:""}</div></div></div>
   <div class="chips-label">વિભાગ પસંદ કરો</div>
   <div class="chips" id="chips">${chips}</div>
   <div class="modes">
-    <button class="mode primary" id="mPr"><b>પ્રેક્ટિસ</b><span>જવાબ આપો, તરત સમજૂતી જુઓ · ${pool.length} પ્રશ્ન</span></button>
+    <button class="mode primary" id="mPr"><b>${pdone&&pdone<pool.length?"પ્રેક્ટિસ ચાલુ રાખો":"પ્રેક્ટિસ"}</b><span class="num">${pdone&&pdone<pool.length?`પ્રશ્ન ${pdone+1} થી આગળ · કુલ ${nf(pool.length)}`:`જવાબ આપો, તરત સમજૂતી જુઓ · ${nf(pool.length)} પ્રશ્ન`}</span></button>
     <button class="mode test" id="mTs"><b>મોક ટેસ્ટ</b><span>${Math.min(TEST_SIZE,pool.length)} પ્રશ્ન · ${Math.min(TEST_SIZE,pool.length)} મિનિટ · પરિણામ અંતે</span></button>
     <button class="mode" id="mWr" ${st.wrong?"":"disabled"}><b>ભૂલ સુધારો</b><span>ખોટા પડેલા ${st.wrong} પ્રશ્ન ફરી</span></button>
     <button class="mode" id="mBm" ${st.bm?"":"disabled"}><b>સાચવેલા</b><span>${st.bm} પ્રશ્ન ⭑ કરેલા</span></button>
   </div>
   <button class="link-btn" id="rst">આ ટોપિકની પ્રગતિ શૂન્ય કરો</button>`;
-  $("#bk").onclick=()=>{sfx.tap();go("home")};
+  const ctx={t:V.t,sub:V.sub,d};
+  $("#bk").onclick=()=>{sfx.tap();navBack()};
   document.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{sfx.tap();V.sub=+b.dataset.s;topic()});
-  $("#mPr").onclick=()=>startPractice(pool,"practice");
-  $("#mTs").onclick=()=>startTest(pool);
-  $("#mWr").onclick=()=>startPractice(d.questions.filter(q=>S.q[q.id]&&!S.q[q.id].r),"wrong");
-  $("#mBm").onclick=()=>startPractice(d.questions.filter(q=>S.bm[q.id]),"bm");
+  $("#mPr").onclick=()=>startPractice(pool,"practice",ctx);
+  $("#mTs").onclick=()=>startTest(pool,ctx);
+  $("#mWr").onclick=()=>startPractice(d.questions.filter(q=>S.q[q.id]&&!S.q[q.id].r),"wrong",ctx);
+  $("#mBm").onclick=()=>startPractice(d.questions.filter(q=>S.bm[q.id]),"bm",ctx);
   $("#rst").onclick=()=>confirmBox("પ્રગતિ શૂન્ય કરવી છે?","આ ટોપિકના બધા જવાબ, ભૂલો અને સાચવેલા પ્રશ્નો દૂર થશે.","હા, શૂન્ય કરો",()=>{
-    d.questions.forEach(q=>{delete S.q[q.id];delete S.bm[q.id]}); delete S.best[d.id]; save(); topic(); toast("પ્રગતિ શૂન્ય થઈ")});
+    d.questions.forEach(q=>{delete S.q[q.id];delete S.bm[q.id]}); delete S.best[d.id]; PROG=null; TOT=Object.keys(S.q).length; save(); topic(); toast("પ્રગતિ શૂન્ય થઈ")});
 }
 function filtered(d){return V.sub===-1?d.questions:d.questions.filter(q=>q.s===V.sub)}
 
@@ -389,21 +633,26 @@ function confirmBox(title,body,yes,fn){
 }
 
 /* ---------- practice ---------- */
-function startPractice(list,kind){
-  if(!list.length) return toast("આ વિભાગમાં પ્રશ્ન નથી");
+function startPractice(list,kind,ctx){
+  if(!list.length){setLayer("");return toast("આ વિભાગમાં પ્રશ્ન નથી")}
   sfx.tap(); audio();
   let start=0; if(kind==="practice"){const i=list.findIndex(q=>!S.q[q.id]); start=i<0?0:i;}
-  go("quiz",{mode:"practice",kind,list,i:start,ans:{},streak:0,d:cache[V.t.id],t:V.t,sub:V.sub});
+  const mixed=!!ctx.mixed;
+  if(!mixed&&kind==="practice"){S.last={t:ctx.t.id,sub:ctx.sub};save()}
+  const d=mixed?{id:"mix",title:ctx.mixed,subtopics:[],questions:list}:ctx.d;
+  go("quiz",{mode:"practice",kind,list,i:start,ans:{},streak:0,d,t:mixed?null:ctx.t,sub:mixed?-1:ctx.sub,mixed},V.view==="result");
 }
 /* ---------- test ---------- */
-function startTest(pool){
+function startTest(pool,ctx){
   if(!pool.length) return toast("આ વિભાગમાં પ્રશ્ન નથી");
   sfx.tap(); audio();
   const list=shuffle(pool).slice(0,TEST_SIZE);
-  go("quiz",{mode:"test",list,i:0,ans:{},left:list.length*60,started:Date.now(),d:cache[V.t.id],t:V.t,sub:V.sub});
+  go("quiz",{mode:"test",list,i:0,ans:{},left:list.length*60,started:Date.now(),d:ctx.d,t:ctx.t,sub:ctx.sub},V.view==="result");
 }
+function tagOf(q){ if(V.mixed){const t=topicOfId(q.id); return t?t.name:""} return V.d.subtopics[q.s-1]||"" }
 
 function quiz(){
+  paintBar();
   const q=V.list[V.i], n=V.list.length, picked=V.ans[q.id], test=V.mode==="test";
   const answered=!test&&picked!=null;
   const opts=q.o.map((o,k)=>{
@@ -413,31 +662,31 @@ function quiz(){
     return `<button class="${cls}" data-k="${k}" ${answered?"disabled":""}><span class="bub">${L[k]}</span><span class="opt-t">${esc(o)}</span></button>`;
   }).join("");
   const exp=answered?`<div class="exp ${picked===q.a?"":"bad"}"><h4>${picked===q.a?"સાચો જવાબ!":"સાચો જવાબ: ("+L[q.a]+") "+esc(q.o[q.a])}</h4><p>${esc(q.e)}</p></div>`:"";
-  const kindLabel={practice:"પ્રેક્ટિસ",wrong:"ભૂલ સુધારો",bm:"સાચવેલા"}[V.kind]||"";
+  const kindLabel={practice:"પ્રેક્ટિસ",wrong:"ભૂલ સુધારો",bm:"સાચવેલા",daily:"આજનો ટેસ્ટ"}[V.kind]||"";
   const top=test
     ?`<span class="qcount num">${V.i+1}<small> / ${n}</small></span><span class="spacer"></span><button class="btn" id="palBtn" style="min-height:36px;padding:0 12px">બધા પ્રશ્ન</button><span class="timer num" id="tmr">${fmt(V.left)}</span>`
-    :`<span class="qcount num">${V.i+1}<small> / ${n} · ${kindLabel}</small></span><span class="spacer"></span>${V.streak>=2?`<span class="streak num">સળંગ ${V.streak} સાચા</span>`:""}`;
+    :`<span class="qcount num">${V.i+1}<small> / ${nf(n)} · ${kindLabel}</small></span><span class="spacer"></span>${V.streak>=2?`<span class="streak num">સળંગ ${V.streak} સાચા</span>`:""}`;
+  const tag=tagOf(q);
   $("#app").innerHTML=`
-  <button class="back" id="bk">${ICON.back}${test?"ટેસ્ટ છોડો":"ટોપિક પર પાછા"}</button>
+  <button class="back" id="bk">${ICON.back}${test?"ટેસ્ટ છોડો":"પાછા"}</button>
   <div class="qtop">${top}</div>
   <div class="track"><i style="width:${(test?Object.keys(V.ans).length:V.i+(answered?1:0))*100/n}%"></i></div>
   <article class="qcard" id="qc">
-    <span class="qtag">${esc(V.d.subtopics[q.s-1])}</span>
+    ${tag?`<span class="qtag">${esc(tag)}</span>`:""}
     <h2 class="qtext"><span class="qnum num">${V.i+1}.</span>${esc(q.q)}</h2>
     ${q.img?`<figure class="qfig">${q.img}</figure>`:""}<div class="opts" id="opts">${opts}</div>
     ${exp}
     <div class="qid"><span>પ્રશ્ન ID: ${q.id}</span><button class="bm" id="bmB" aria-pressed="${!!S.bm[q.id]}">${ICON.star}${S.bm[q.id]?"સાચવેલ":"સાચવો"}</button></div>
   </article>`;
-  // dock
   if(test){
     const last=V.i===n-1;
     setDock(`<button class="btn" id="prv" ${V.i?"":"disabled"}>પાછળ</button>${last?`<button class="btn amber main" id="sub" style="background:var(--amber);border-color:var(--amber);color:var(--amber-ink)">સબમિટ કરો</button>`:`<button class="btn main" id="nxt">આગળ</button>`}`);
   }else{
     setDock(`<button class="btn" id="prv" ${V.i?"":"disabled"}>પાછળ</button><button class="btn main" id="nxt" ${answered?"":"disabled"}>${V.i===n-1?"પૂરું કરો":"આગળ"}</button>`);
   }
-  $("#bk").onclick=()=>{ if(test) confirmBox("ટેસ્ટ છોડવો છે?","અત્યાર સુધીના જવાબો ગણાશે નહીં.","હા, છોડો",()=>go("topic",{t:V.t,sub:V.sub})); else go("topic",{t:V.t,sub:V.sub}); };
+  $("#bk").onclick=navBack;
   document.querySelectorAll("#opts .opt").forEach(b=>b.onclick=()=>choose(+b.dataset.k));
-  $("#bmB").onclick=()=>{ if(S.bm[q.id]) delete S.bm[q.id]; else S.bm[q.id]=1; save(); sfx.tap(); buzz(15); quizKeepScroll(); };
+  $("#bmB").onclick=()=>{ if(S.bm[q.id]) delete S.bm[q.id]; else S.bm[q.id]=1; PROG=null; save(); sfx.tap(); buzz(15); quizKeepScroll(); };
   const prv=$("#prv"); if(prv) prv.onclick=()=>{sfx.tap();V.i--;quiz();window.scrollTo(0,0)};
   const nxt=$("#nxt"); if(nxt) nxt.onclick=next;
   const sub=$("#sub"); if(sub) sub.onclick=askSubmit;
@@ -450,7 +699,8 @@ function choose(k){
   if(V.mode==="test"){ V.ans[q.id]=k; sfx.tap(); buzz(12); quizKeepScroll(); return; }
   if(V.ans[q.id]!=null) return;
   V.ans[q.id]=k; const ok=k===q.a;
-  const prev=S.q[q.id]; S.q[q.id]={r:ok?1:0,n:(prev?prev.n:0)+1}; save();
+  const prev=S.q[q.id]; S.q[q.id]={r:ok?1:0,n:(prev?prev.n:0)+1};
+  bumpDay(1,ok?1:0,prev?0:1); save();
   if(ok){V.streak++; sfx.ok(V.streak); buzz(25); if(V.streak%5===0) setTimeout(()=>toast(`વાહ! સળંગ ${V.streak} સાચા`),150);}
   else{V.streak=0; sfx.bad(); buzz([70,50,70]);}
   quizKeepScroll();
@@ -460,10 +710,11 @@ function choose(k){
 function next(){
   sfx.tap();
   if(V.i<V.list.length-1){V.i++;quiz();window.scrollTo(0,0);return}
-  if(V.mode==="practice"){ // finish practice round
-    const tot=V.list.length, ok=V.list.filter(q=>V.ans[q.id]===q.a).length;
+  if(V.mode==="practice"){
+    const done=V.list.filter(q=>V.ans[q.id]!=null), tot=done.length||V.list.length, ok=done.filter(q=>V.ans[q.id]===q.a).length;
+    if(V.kind==="daily"){S.daily={k:dk(),ok,tot};save()}
     sfx.finish(); buzz([30,40,30,40,120]);
-    go("result",{practice:true,list:V.list,ans:V.ans,ok,tot,d:V.d,t:V.t,sub:V.sub,secs:0});
+    go("result",{practice:true,kind:V.kind,list:done.length?done:V.list,ans:V.ans,ok,tot,d:V.d,t:V.t,sub:V.sub,mixed:V.mixed,secs:0},true);
   }
 }
 function tick(){
@@ -487,27 +738,36 @@ function askSubmit(){
   confirmBox("ટેસ્ટ સબમિટ કરવો છે?", left?`હજુ ${left} પ્રશ્નના જવાબ બાકી છે.`:"બધા પ્રશ્નના જવાબ આપ્યા છે.","હા, સબમિટ કરો",submitTest);
 }
 function submitTest(){
-  clearInterval(timerId);
-  let ok=0; V.list.forEach(q=>{const k=V.ans[q.id]; if(k==null) return; const r=k===q.a; if(r) ok++; const p=S.q[q.id]; S.q[q.id]={r:r?1:0,n:(p?p.n:0)+1};});
+  clearInterval(timerId); setLayer("");
+  let ok=0,ans=0,fresh=0; V.list.forEach(q=>{const k=V.ans[q.id]; if(k==null) return; ans++; const r=k===q.a; if(r) ok++; const p=S.q[q.id]; if(!p) fresh++; S.q[q.id]={r:r?1:0,n:(p?p.n:0)+1};});
   const pct=Math.round(ok*100/V.list.length); const d=V.d;
-  if(S.best[d.id]==null||pct>S.best[d.id]) S.best[d.id]=pct; save();
+  if(S.best[d.id]==null||pct>S.best[d.id]) S.best[d.id]=pct;
+  if(ans) bumpDay(ans,ok,fresh); save();
   sfx.finish(); buzz([30,40,30,40,120]);
-  go("result",{practice:false,list:V.list,ans:V.ans,ok,tot:V.list.length,d,t:V.t,sub:V.sub,secs:Math.round((Date.now()-V.started)/1000)});
+  go("result",{practice:false,list:V.list,ans:V.ans,ok,tot:V.list.length,d,t:V.t,sub:V.sub,mixed:V.mixed,size:V.size,secs:Math.round((Date.now()-V.started)/1000)},true);
 }
 
 /* ---------- result ---------- */
 function result(){
-  setDock("");
-  const {ok,tot,list,ans}=V; const wrong=list.filter(q=>ans[q.id]!=null&&ans[q.id]!==q.a).length; const skip=tot-ok-wrong;
-  const pct=Math.round(ok*100/tot);
+  setDock(""); paintBar();
+  const {ok,tot,list,ans}=V; const wrong=list.filter(q=>ans[q.id]!=null&&ans[q.id]!==q.a).length;
+  const pct=tot?Math.round(ok*100/tot):0;
   const msg=pct>=85?["જોરદાર! તમે તૈયાર છો","આ ઝડપ અને ચોકસાઈ પરીક્ષા સુધી જાળવી રાખો."]:pct>=60?["સરસ પ્રયાસ","ખોટા પડેલા પ્રશ્નો ‘ભૂલ સુધારો’માં ફરી કરો, સ્કોર ઝડપથી વધશે."]:["શરૂઆત થઈ ગઈ, હવે રોજ થોડું","પહેલાં પ્રેક્ટિસ મોડમાં સમજૂતી સાથે વાંચો, પછી ફરી ટેસ્ટ આપો."];
-  const share=encodeURIComponent(`મેં GSRTC હેલ્પર ભરતીના "${V.d.title}" ${V.practice?"પ્રેક્ટિસ":"મોક ટેસ્ટ"}માં ${tot}માંથી ${ok} સાચા કર્યા! તમે પણ મફત પ્રેક્ટિસ કરો, દરેક પ્રશ્ન સમજૂતી સાથે:\n${SHARE_URL}`);
+  const share=encodeURIComponent(`મેં GSRTC હેલ્પર ભરતીના "${V.d.title}"માં ${tot}માંથી ${ok} સાચા કર્યા! તમે પણ મફત પ્રેક્ટિસ કરો, દરેક પ્રશ્ન સમજૂતી સાથે:\n${SHARE_URL}`);
+  let bd="";
+  if(V.mixed&&!V.practice){
+    const g={}; list.forEach(q=>{const t=topicOfId(q.id); if(!t) return; const o=g[t.sj.id]||(g[t.sj.id]={s:t.sj,n:0,ok:0}); o.n++; if(ans[q.id]===q.a) o.ok++});
+    bd=`<div class="bd"><h3>વિષયવાર સ્કોર</h3>${SUBJECTS.filter(s=>g[s.id]).map(s=>{const o=g[s.id];return `<div class="bd-r"><span>${esc(s.name)}</span><b class="num">${o.ok} / ${o.n}</b><div class="mini"><i style="width:${o.ok*100/o.n}%;background:${s.color}"></i></div></div>`}).join("")}</div>`;
+  }
+  const tn=todayN(), st=streak();
+  const goal=`<div class="goalline num">${ICON.flame}<span>આજે ${tn} / ${S.goal} પ્રશ્ન${tn>=S.goal?" — લક્ષ્ય પૂરું":""} · સળંગ ${st} દિવસ</span></div>`;
   const rv=list.map((q,i)=>{const k=ans[q.id]; const r=k===q.a; const cls=k==null?"":(r?"g":"r");
     return `<div class="rv ${cls}"><h4><span class="num" style="color:var(--muted)">${i+1}.</span> ${esc(q.q)}</h4>${q.img?`<figure class="qfig sm">${q.img}</figure>`:""}
     ${k!=null&&!r?`<div class="a you">તમારો જવાબ: (${L[k]}) ${esc(q.o[k])}</div>`:""}${k==null?`<div class="a" style="color:var(--muted)">જવાબ આપ્યો નથી</div>`:""}
     <div class="a right">સાચો જવાબ: (${L[q.a]}) ${esc(q.o[q.a])}</div><div class="e">${esc(q.e)}</div></div>`}).join("");
+  const mixed=V.mixed, againLabel=V.practice?(mixed?"હોમ પર જાઓ":"ટોપિક પર પાછા"):"નવો ટેસ્ટ આપો";
   $("#app").innerHTML=`
-  <button class="back" id="bk">${ICON.back}ટોપિક પર પાછા</button>
+  <button class="back" id="bk">${ICON.back}${mixed?"હોમ":"ટોપિક પર પાછા"}</button>
   <div class="res">
     <div class="score num">${ok}<small> / ${tot}</small></div>
     <h1>${msg[0]}</h1><p>${msg[1]}</p>
@@ -516,27 +776,63 @@ function result(){
       <div class="r"><b class="num">${wrong}</b><span>ખોટા</span></div>
       <div><b class="num">${V.practice?pct+"%":fmt(V.secs)}</b><span>${V.practice?"ચોકસાઈ":"સમય લીધો"}</span></div>
     </div>
+    ${goal}${bd}
     <div class="ractions">
+      <button class="btn main" id="again">${againLabel}</button>
+      ${V.practice&&!mixed?`<button class="btn" id="other">બીજો ટોપિક પસંદ કરો</button>`:""}
       <a class="btn wa" href="https://wa.me/?text=${share}" target="_blank" rel="noopener">WhatsApp પર મિત્રોને મોકલો</a>
-      <button class="btn main" id="again">${V.practice?"ટોપિક પર પાછા":"નવો ટેસ્ટ આપો"}</button>
     </div>
   </div>
   <section class="review"><h2 class="sec-title" style="margin-top:8px">જવાબ અને સમજૂતી</h2>${rv}</section>`;
-  $("#bk").onclick=()=>go("topic",{t:V.t,sub:V.sub});
-  $("#again").onclick=()=>{ if(V.practice) go("topic",{t:V.t,sub:V.sub}); else { V.sub=V.sub; const pool=V.sub===-1?V.d.questions:V.d.questions.filter(q=>q.s===V.sub); startTest(pool);} };
+  $("#bk").onclick=navBack;
+  const o=$("#other"); if(o) o.onclick=goHome;
+  $("#again").onclick=()=>{
+    if(V.practice) return navBack();
+    if(mixed) return startMock(V.size||25);
+    const pool=V.sub===-1?V.d.questions:V.d.questions.filter(q=>q.s===V.sub); startTest(pool,{t:V.t,sub:V.sub,d:V.d}); };
 }
+
+/* ---------- settings ---------- */
+function settings(quiet){ if(quiet!==true) sfx.tap();
+  const seg=(id,opts,cur)=>`<span class="seg" id="${id}">${opts.map(([v,l])=>`<button data-v="${v}" aria-pressed="${String(cur)===String(v)}">${l}</button>`).join("")}</span>`;
+  setLayer(`<div class="sheet-bg" id="sb"><div class="sheet" role="dialog" aria-modal="true"><h3>સેટિંગ્સ</h3>
+   <div class="srow"><span>રોજનું લક્ષ્ય<small>દિવસમાં કેટલા પ્રશ્ન કરવા છે</small></span>${seg("sGoal",[[10,"10"],[20,"20"],[30,"30"],[50,"50"]],S.goal)}</div>
+   <div class="srow"><span>અક્ષરનું કદ</span>${seg("sFs",[[0,"સામાન્ય"],[1,"મોટા"],[2,"XL"]],S.fs)}</div>
+   <div class="srow"><span>દેખાવ</span>${seg("sTh",[["auto","ઓટો"],["light","લાઇટ"],["dark","ડાર્ક"]],S.theme)}</div>
+   <div class="srow"><span>અવાજ</span><button class="sw" id="sSnd" aria-pressed="${!!S.snd}" aria-label="અવાજ"></button></div>
+   <div class="srow"><span>વાઇબ્રેશન</span><button class="sw" id="sVib" aria-pressed="${!!S.vib}" aria-label="વાઇબ્રેશન"></button></div>
+   <div class="srow"><span>બધી પ્રગતિ શૂન્ય કરો<small>બધા જવાબ, ભૂલો, સાચવેલા અને સળંગ દિવસ દૂર થશે</small></span><button class="btn" id="sRst" style="color:var(--bad)">શૂન્ય</button></div>
+   <div class="row"><button class="btn main" id="cNo">થઈ ગયું</button></div></div></div>`);
+  const close=()=>{setLayer(""); render()};
+  $("#sb").onclick=e=>{if(e.target.id==="sb")close()}; $("#cNo").onclick=close;
+  const bind=(id,fn)=>document.querySelectorAll("#"+id+" button").forEach(b=>b.onclick=()=>{fn(b.dataset.v);save();applyLook();sfx.tap();settingsKeep()});
+  bind("sGoal",v=>S.goal=+v); bind("sFs",v=>S.fs=+v); bind("sTh",v=>S.theme=v);
+  $("#sSnd").onclick=()=>{S.snd=!S.snd;save();if(S.snd)sfx.ok();settingsKeep()};
+  $("#sVib").onclick=()=>{S.vib=!S.vib;save();buzz(40);settingsKeep()};
+  $("#sRst").onclick=()=>confirmBox("બધી પ્રગતિ શૂન્ય કરવી છે?","આ પાછું લાવી શકાશે નહીં.","હા, બધું શૂન્ય કરો",()=>{
+    S.q={};S.bm={};S.best={};S.days={};S.last=null;S.daily=null;PROG=null;TOT=0;save();stack=[];V={view:"home"};render();toast("બધી પ્રગતિ શૂન્ય થઈ")});
+}
+function settingsKeep(){const sh=document.querySelector(".sheet"), y=sh?sh.scrollTop:0; settings(true); const s2=document.querySelector(".sheet"); if(s2) s2.scrollTop=y}
 
 /* ---------- keyboard ---------- */
 document.addEventListener("keydown",e=>{
   if(V.view!=="quiz"||$("#layer").innerHTML) return;
+  if(e.target&&/INPUT|TEXTAREA/.test(e.target.tagName)) return;
   const m={"1":0,"2":1,"3":2,"4":3,"a":0,"b":1,"c":2,"d":3}[e.key.toLowerCase()];
   if(m!=null){choose(m);e.preventDefault();return}
   if(e.key==="Enter"||e.key==="ArrowRight"){const n=$("#nxt");if(n&&!n.disabled){n.click();e.preventDefault()}}
   if(e.key==="ArrowLeft"){const p=$("#prv");if(p&&!p.disabled)p.click()}
 });
-$("#logo").onclick=e=>{e.preventDefault();go("home")};
+$("#logo").onclick=e=>{e.preventDefault(); if(V.view!=="home") goHome(); else window.scrollTo({top:0,behavior:"smooth"})};
+$("#setBtn").innerHTML=ICON.gear; $("#setBtn").onclick=()=>settings();
+$("#stk").onclick=()=>toast(streak()?"સળંગ "+streak()+" દિવસથી તૈયારી ચાલુ છે":"આજે 1 પ્રશ્ન કરો અને સળંગ દિવસ શરૂ કરો");
 
-paintToggles(); render();
+/* ---------- install as app + offline ---------- */
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstall=e;if(V.view==="home")home()});
+window.addEventListener("appinstalled",()=>{deferredInstall=null;if(V.view==="home")home()});
+try{ if("serviceWorker" in navigator&&location.protocol==="https:"&&/github\.io$/.test(location.hostname)) navigator.serviceWorker.register("sw.js").catch(()=>{}); }catch(e){}
+
+applyLook(); render();
 })();
 </script>
 
